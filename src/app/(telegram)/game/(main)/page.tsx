@@ -1,6 +1,7 @@
 'use client'
 import { task } from '@app/app/(telegram)/_types/task.interface'
 import BalanceCard from '@app/app/(telegram)/game/(main)/_components/BalanceCard'
+import RewardCard from '@app/app/(telegram)/game/(main)/_components/RewardCard'
 import SwipeableSocialCards from '@app/app/(telegram)/game/(main)/_components/SwipeableSocialCards'
 import Task from '@app/app/(telegram)/game/(main)/_components/Task'
 import { useState } from 'react'
@@ -10,7 +11,7 @@ type props = {
   isComplete: boolean
 }
 export default function Home() {
-  const [tabValue, setTabValue] = useState('socials')
+  const [tabValue, setTabValue] = useState('social')
   // const [trigger] = useMarkAsOldMutation()
   // const user = useContext(MagicCP)
   // console.log(user?.user)
@@ -88,7 +89,6 @@ export default function Home() {
     item.item?.type === tabValue ? item : null,
   )
 
-  console.log(tabValue, JSON.stringify(taskFilter, null, 2))
   return (
     <div className="min-h-screen flex flex-col gap-4">
       <BalanceCard balance={5000} />
@@ -117,13 +117,12 @@ export default function Home() {
         <Task category={tabValue} task={taskFilter} />
       )}
 
-      {/*<p className="font-montserrat text-xl font-bold text-white my-2">*/}
-      {/*  Your rewards*/}
-      {/*</p>*/}
-      {/*<RewardsCards />*/}
-      {/*<RewardsCards />*/}
-      {/*<RewardsCards />*/}
-      {/*<RewardsCards />*/}
+      <p className="font-montserrat text-xl font-bold text-white my-2">
+        Your rewards
+      </p>
+      <RewardCard />
+      <RewardCard />
+      <RewardCard />
     </div>
   )
 }
