@@ -1,36 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rats Kingdom Frontend
 
-## Getting Started
+## 💵 Sponsorship
+If you want to support me, I will be very happy about it. 🥺👉👈
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- TON or Jettons(NOT, DOGS, X, HMSTR, STON, GEM, JETTON etc) or TON NFT or TG-Names: `UQAjDnbTYmkesnuG0DZv-PeMo3lY-B-K6mfArUBEEdAb4xaJ`
+- USDT (TON): `UQAjDnbTYmkesnuG0DZv-PeMo3lY-B-K6mfArUBEEdAb4xaJ`
+- USDT (TRC20): `TPYpSQoK7CBvdNBsQRjsNdxFB54Uon8687`
+- BTC: `1Ai9bL7862KQrcHymkakgaEAsDL5M3uNyX`
+- Binance ID: `91467512`
+- ByBit ID: `249886061`
+- KuCoin ID: `208825167`
+- GateIO ID: `18943532`
+- BingX ID: `27667379`
+- OKX ID: `178528329853476864`
+- Telegram Wallet: [@kennix88](https://t.me/Kennix88)
