@@ -8,15 +8,11 @@ export default function gameMainLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body>
-        <div className="bg-black min-h-screen relative p-3">
-          <Navbar />
+    <div className="bg-black min-h-screen relative p-3">
+      <Navbar />
 
-          {children}
-          <BottomNavigation />
-        </div>
-      </body>
-    </html>
+      {children}
+      <BottomNavigation />
+    </div>
   )
 }
