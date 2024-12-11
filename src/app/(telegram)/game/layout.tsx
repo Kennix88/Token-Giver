@@ -16,7 +16,7 @@ const montserrat = Montserrat({
   display: 'swap',
 })
 
-export default function gameLayout({
+export default function GameLayout({
   children,
 }: Readonly<{
   children: React.ReactNode

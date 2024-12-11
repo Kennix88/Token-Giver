@@ -2,7 +2,7 @@ import BottomNavigation from '@app/app/(telegram)/_components/BottomNavigation'
 import Navbar from '@app/app/(telegram)/_components/Navbar'
 import React from 'react'
 
-export default function gameMainLayout({
+export default function GameMainLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
