@@ -6,13 +6,7 @@ type props = {
   isComplete: boolean
 }
 
-export default function Task({
-  category,
-  task,
-}: {
-  category: string
-  task: props[]
-}) {
+export default function Task({ task }: { category: string; task: props[] }) {
   return (
     <div className="flex flex-col gap-3 mt-5">
       {task.map((item: props) => (
