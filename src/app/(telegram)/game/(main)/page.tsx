@@ -1,5 +1,6 @@
 'use client'
 import BalanceCard from '@app/app/(telegram)/game/(main)/_components/BalanceCard'
+import SwipeableSocialCards from '@app/app/(telegram)/game/(main)/_components/SwipeableSocialCards'
 
 export default function Home() {
   // const [tabValue, setTabValue] = useState('socials')
@@ -27,9 +28,9 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <BalanceCard balance={5000} />
-      {/*<div className="mt-4">*/}
-      {/*  <SwipeableSocialCards />*/}
-      {/*</div>*/}
+      <div className="mt-4">
+        <SwipeableSocialCards />
+      </div>
       {/*<p className="font-montserrat text-xl font-bold text-white">Tasks</p>*/}
       {/*<div className="bg-white bg-opacity-10 rounded-xl p-2 flex items-center gap-2">*/}
       {/*  <button*/}
