@@ -8,7 +8,6 @@ import { MdLeaderboard } from 'react-icons/md'
 
 export default function BottomNavigation() {
   const location = usePathname()
-  console.log(location)
 
   return (
     <div className="grid grid-cols-4 gap-4 sticky bottom-0 bg-black py-2">
