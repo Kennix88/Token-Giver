@@ -6,7 +6,7 @@
 <div align="center">
 
 # Token-Giver
-Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization support. Analogue: Paws, Dogs, Rats Kingdom, Agent 301, Goats, Cats&Dogs etc.
+Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization support. Analogue: Paws, Dogs, Rats Kingdom, Agent 301, Goats, Cats&Dogs etc. Free use. Suitable for commerce.
 
 ![Title](https://img.shields.io/badge/Repository%3A-blue?style=for-the-badge&color=3C5280)
 [![release](https://img.shields.io/github/package-json/v/Kennix88/Token-Giver?style=for-the-badge&color=0891b2&labelColor=1c1917)](https://github.com/Kennix88/Token-Giver/releases)
