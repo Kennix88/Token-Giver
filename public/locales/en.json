@@ -1,6 +1,11 @@
 {
-  "i18n": {
-    "header": "Application supports i18n",
-    "footer": "You can select a different language from the dropdown menu."
+  "game": {
+    "menu": {
+      "home": "Home",
+      "tasks": "Tasks",
+      "leaders": "Leaders",
+      "friends": "Friends",
+      "games": "Games"
+    }
   }
 }

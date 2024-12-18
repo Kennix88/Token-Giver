@@ -35,6 +35,7 @@ function RootInner({ children }: PropsWithChildren) {
 
   // Set the user locale.
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     initDataUser && setLocale(initDataUser.languageCode)
   }, [initDataUser])
 
@@ -43,7 +44,7 @@ function RootInner({ children }: PropsWithChildren) {
       <AppRoot
         appearance={isDark ? 'dark' : 'light'}
         platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
-        className="bg-background text-on-surface w-screen min-h-screen ">
+        className="bg-background text-on-surface w-screen min-h-screen">
         {children}
       </AppRoot>
     </TonConnectUIProvider>
@@ -61,6 +62,8 @@ export function Root(props: PropsWithChildren) {
       <RootInner {...props} />
     </ErrorBoundary>
   ) : (
-    <div className="root__loading">Loading</div>
+    <div className="root__loading bg-background text-on-surface w-screen min-h-screen...">
+      Loading...
+    </div>
   )
 }

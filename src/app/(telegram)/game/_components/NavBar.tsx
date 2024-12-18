@@ -4,38 +4,43 @@ import { usePathname } from 'next/navigation'
 import { FaHome, FaTasks, FaUserFriends } from 'react-icons/fa'
 import { FaStar } from 'react-icons/fa6'
 import { IoLogoGameControllerA } from 'react-icons/io'
+import { useTranslations } from 'use-intl'
 
-const navItems = [
-  {
-    name: 'home',
-    href: '',
-    icon: <FaHome className="text-2xl" />,
-  },
-  { name: 'Tasks', href: '/tasks', icon: <FaTasks className="text-2xl" /> },
-  {
-    name: 'Leaders',
-    href: '/leaders',
-    icon: <FaStar className="text-2xl" />,
-  },
-  {
-    name: 'Friends',
-    href: '/friends',
-    icon: <FaUserFriends className="text-2xl" />,
-  },
-  {
-    name: 'Games',
-    href: '/games',
-    icon: <IoLogoGameControllerA className="text-2xl" />,
-  },
-]
 export default function NavBar() {
+  const t = useTranslations('game')
   const location = usePathname()
 
-  console.log(location)
+  const navItems = [
+    {
+      name: t('menu.home'),
+      href: '',
+      icon: <FaHome className="text-2xl" />,
+    },
+    {
+      name: t('menu.tasks'),
+      href: '/tasks',
+      icon: <FaTasks className="text-2xl" />,
+    },
+    {
+      name: t('menu.leaders'),
+      href: '/leaders',
+      icon: <FaStar className="text-2xl" />,
+    },
+    {
+      name: t('menu.friends'),
+      href: '/friends',
+      icon: <FaUserFriends className="text-2xl" />,
+    },
+    {
+      name: t('menu.games'),
+      href: '/games',
+      icon: <IoLogoGameControllerA className="text-2xl" />,
+    },
+  ]
 
   return (
     <div
-      className={`bottom-0 left-0 right-0 fixed grid grid-cols-5 grid-rows-1 gap-2 p-2 border-t border-outline`}>
+      className={`bottom-0 left-0 right-0 fixed grid grid-cols-5 grid-rows-1 gap-2 p-2 rounded-t-xl bg-surface-container-l2`}>
       {navItems.map((item) => (
         <div
           key={item.name}
