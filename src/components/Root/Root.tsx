@@ -42,7 +42,8 @@ function RootInner({ children }: PropsWithChildren) {
     <TonConnectUIProvider manifestUrl="/tonconnect-manifest.json">
       <AppRoot
         appearance={isDark ? 'dark' : 'light'}
-        platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}>
+        platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
+        className="bg-background text-on-surface w-screen min-h-screen ">
         {children}
       </AppRoot>
     </TonConnectUIProvider>

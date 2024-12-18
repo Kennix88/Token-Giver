@@ -5,12 +5,13 @@ import type { PropsWithChildren } from 'react'
 import { Root } from '@/components/Root/Root'
 import { I18nProvider } from '@/core/i18n/provider'
 
+import NavBar from '@/app/(telegram)/game/_components/NavBar'
 import '@/app/_assets/globals.css'
 import 'normalize.css/normalize.css'
 
 export const metadata: Metadata = {
-  title: 'Your Application Title Goes Here',
-  description: 'Your application description goes here',
+  title: 'Token Giver',
+  description: 'Play-to-earn game',
 }
 
 export default async function RootLayout({ children }: PropsWithChildren) {
@@ -20,7 +21,10 @@ export default async function RootLayout({ children }: PropsWithChildren) {
     <html lang={locale}>
       <body>
         <I18nProvider>
-          <Root>{children}</Root>
+          <Root>
+            <div>{children}</div>
+            <NavBar />
+          </Root>
         </I18nProvider>
       </body>
     </html>
