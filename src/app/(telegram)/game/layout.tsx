@@ -1,32 +1,27 @@
-import '@app/app/globals.css'
-import { Genos, Montserrat } from 'next/font/google'
-import React from 'react'
+import type { Metadata } from 'next'
+import { getLocale } from 'next-intl/server'
+import type { PropsWithChildren } from 'react'
 
-const genos = Genos({
-  subsets: ['latin'],
-  style: ['normal', 'italic'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  display: 'swap',
-})
+import { Root } from '@/components/Root/Root'
+import { I18nProvider } from '@/core/i18n/provider'
 
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  style: ['normal', 'italic'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  display: 'swap',
-})
+import '@/app/_assets/globals.css'
+import 'normalize.css/normalize.css'
 
-export default function GameLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export const metadata: Metadata = {
+  title: 'Your Application Title Goes Here',
+  description: 'Your application description goes here',
+}
+
+export default async function RootLayout({ children }: PropsWithChildren) {
+  const locale = await getLocale()
+
   return (
-    <html lang="en">
-      <body className={`${genos.className} ${montserrat.className}`}>
-        {/*<TonConnectUIProvider manifestUrl="asda">*/}
-        {children}
-        {/*</TonConnectUIProvider>*/}
+    <html lang={locale}>
+      <body>
+        <I18nProvider>
+          <Root>{children}</Root>
+        </I18nProvider>
       </body>
     </html>
   )
