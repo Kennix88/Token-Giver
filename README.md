@@ -12,6 +12,7 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
 
 ![Title](https://img.shields.io/badge/Repository%3A-blue?style=for-the-badge&color=3C5280)
 [![release](https://img.shields.io/github/package-json/v/Kennix88/Token-Giver?style=for-the-badge&color=0891b2&labelColor=1c1917)](https://github.com/Kennix88/Token-Giver/releases)
+[![License](https://img.shields.io/github/license/Kennix88/Token-Giver?style=for-the-badge&color=0891b2&labelColor=1c1917)](https://github.com/Kennix88/Token-Giver/blob/master/LICENSE)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Kennix88/Token-Giver?style=for-the-badge&color=0891b2&labelColor=1c1917)
 [![wakatime](https://wakatime.com/badge/user/9268c051-c861-45cc-b927-3babf56c56d9/project/1764801e-e34a-4b98-a6c7-ca7ab47972d1.svg?style=for-the-badge&color=0891b2&logoColor=1c1917)](https://github.com/Kennix88/Token-Giver)
 ![Title](https://img.shields.io/badge/Me%3A-blue?style=for-the-badge&color=3C5280)
@@ -44,3 +45,19 @@ If you want to support me, I will be very happy about it. 🥺👉👈
 [![Stargazers repo roster for @Kennix88/Token-Giver](https://reporoster.com/stars/dark/Kennix88/Token-Giver)](https://github.com/Kennix88/Token-Giver/stargazers)
 ### 🍴 Forkers:
 [![Forkers repo roster for @Kennix88/Token-Giver](https://reporoster.com/forks/dark/Kennix88/Token-Giver)](https://github.com/Kennix88/Token-Giver/network/members)
+
+## 🤝 Contributing
+
+<a href="https://next.ossinsight.io/widgets/official/compose-recent-active-contributors?limit=30&repo_id=901400721" target="_blank" style="display: block" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-recent-active-contributors/thumbnail.png?limit=30&repo_id=901400721&image_size=auto&color_scheme=dark" width="655" height="auto">
+    <img alt="Active Contributors of Kennix88/Token-Giver - Last 28 days" src="https://next.ossinsight.io/widgets/official/compose-recent-active-contributors/thumbnail.png?limit=30&repo_id=901400721&image_size=auto&color_scheme=light" width="655" height="auto">
+  </picture>
+</a>
+
+Contributions are welcome! To contribute, fork the repository, make your changes, and submit a pull request. We look forward to your innovative [ideas](https://github.com/Kennix88/Token-Giver/pulls) and improvements.
+
+## License
+This repository is available under the [AGPL-3.0](https://opensource.org/license/agpl-v3). Use it freely in both personal and commercial projects.
+
+Created by [Kennix88](https://github.com/Kennix88).
