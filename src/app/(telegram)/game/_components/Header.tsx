@@ -1,8 +1,26 @@
+'use client'
 import tonSvg from '@/app/_assets/ton.svg'
+import { localesMap } from '@/core/i18n/config'
+import { setLocale } from '@/core/i18n/locale'
+import { Locale } from '@/core/i18n/types'
+import { Listbox, ListboxButton, ListboxOptions } from '@headlessui/react'
 import Image from 'next/image'
-import { MdMenu } from 'react-icons/md'
+import { useState } from 'react'
+import { FaCaretDown } from 'react-icons/fa6'
+import { useLocale } from 'use-intl'
 
 export default function Header() {
+  const locale = useLocale()
+  const [localeState, setLocaleState] = useState(
+    localesMap.find((l) => l.key === locale) || localesMap[0],
+  )
+
+  const onChange = (value: { key: string; title: string; icon: string }) => {
+    const locale = value.key as Locale
+    setLocale(locale)
+    setLocaleState(localesMap.find((l) => l.key === locale) || localesMap[0])
+  }
+
   return (
     <div className="flex flex-row gap-2 items-center justify-between p-4 bg-surface-container-l2 rounded-md">
       <div className="text-xl flex flex-row gap-2 items-center font-bold ">
@@ -10,7 +28,46 @@ export default function Header() {
         Token Giver
       </div>
       <div>
-        <MdMenu className="text-2xl" />
+        <Listbox
+          value={localeState}
+          onChange={(v) => onChange(v)}
+          as="div"
+          className="relative">
+          <ListboxButton
+            as="div"
+            className="relative w-full cursor-pointer text-sm font-medium flex flex-row items-center gap-2 justify-end">
+            <Image
+              src={localeState.icon}
+              alt={'flag'}
+              width={52 / 2}
+              height={40 / 2}
+            />
+            <FaCaretDown />
+          </ListboxButton>
+          <ListboxOptions
+            className="absolute top-12 right-0 min-w-[150px] z-50 mt-1 rounded-md bg-surface-container-h py-1 text-sm font-medium shadow-lg"
+            as="div">
+            <div className="flex max-h-[50vh] w-full flex-col overflow-auto">
+              {localesMap.map((el) => (
+                <Listbox.Option
+                  key={el.key}
+                  value={el}
+                  as="div"
+                  className={`flex flex-row items-center cursor-pointer gap-2 py-2 px-4 ${el.key === locale && 'bg-surface-container-l2'} focus:border-none`}>
+                  <Image
+                    src={el.icon}
+                    alt={'flag'}
+                    width={52 / 2}
+                    height={40 / 2}
+                  />
+                  <div className="text-base-content/50 text-xs flex flex-row gap-1 items-center">
+                    {el.title} [{el.key.toUpperCase()}]
+                  </div>
+                </Listbox.Option>
+              ))}
+            </div>
+          </ListboxOptions>
+        </Listbox>
       </div>
     </div>
   )

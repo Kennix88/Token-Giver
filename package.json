@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
     "@telegram-apps/sdk-react": "^2.0.5",
     "@telegram-apps/telegram-ui": "^2.1.5",
     "@ton/core": "^0.59.0",
@@ -22,7 +23,8 @@
     "normalize.css": "^8.0.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.4.0"
+    "react-icons": "^5.4.0",
+    "react-select": "^5.9.0"
   },
   "devDependencies": {
     "@types/node": "^20",
