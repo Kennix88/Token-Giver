@@ -6,6 +6,9 @@
       "leaders": "Leaders",
       "friends": "Friends",
       "games": "Games"
+    },
+    "profile": {
+      "title": "Profile"
     }
   }
 }

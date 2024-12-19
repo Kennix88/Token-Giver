@@ -25,6 +25,7 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
 </div>
 
 ---
+#### In the process of development! Deadline 01.01.2025...
 
 ## 💵 Sponsorship
 If you want to support me, I will be very happy about it. 🥺👉👈
