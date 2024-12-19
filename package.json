@@ -12,8 +12,11 @@
   "dependencies": {
     "@telegram-apps/sdk-react": "^2.0.5",
     "@telegram-apps/telegram-ui": "^2.1.5",
-    "@tonconnect/ui-react": "^2.0.9",
-    "eruda": "^3.0.1",
+    "@ton/core": "^0.59.0",
+    "@ton/crypto": "^3.3.0",
+    "@ton/ton": "^15.1.0",
+    "@tonconnect/sdk": "^3.0.5",
+    "@tonconnect/ui-react": "^2.0.5",
     "next": "^14.2.20",
     "next-intl": "^3.17.6",
     "normalize.css": "^8.0.1",

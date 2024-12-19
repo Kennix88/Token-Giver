@@ -40,7 +40,7 @@ function RootInner({ children }: PropsWithChildren) {
   }, [initDataUser])
 
   return (
-    <TonConnectUIProvider manifestUrl="/tonconnect-manifest.json">
+    <TonConnectUIProvider manifestUrl="https://kennix.vpnsib.com/tonconnect-manifest.json">
       <AppRoot
         appearance={isDark ? 'dark' : 'light'}
         platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}

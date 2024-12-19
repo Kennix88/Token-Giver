@@ -8,7 +8,10 @@
       "games": "Games"
     },
     "profile": {
-      "title": "Profile"
+      "title": "Profile",
+      "wallet": "Wallet",
+      "notConnected": "Not connected",
+      "connectButton": "Connect a wallet"
     }
   }
 }

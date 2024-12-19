@@ -8,7 +8,10 @@
       "games": "Игры"
     },
     "profile": {
-      "title": "Профиль"
+      "title": "Профиль",
+      "wallet": "Кошелек",
+      "notConnected": "Не подключен",
+      "connectButton": "Подключить кошелек"
     }
   }
 }

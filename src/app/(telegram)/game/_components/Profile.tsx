@@ -1,9 +1,30 @@
 'use client'
+import tonSvg from '@/app/_assets/ton.svg'
+import { useSlicedAddress } from '@/hooks/useSlicedAddress'
 import addSuffixToNumber from '@/utils/addSuffixToNumber.util'
+import { TonConnectButton, useTonWallet } from '@tonconnect/ui-react'
+import Image from 'next/image'
+import { useRef } from 'react'
 import { useTranslations } from 'use-intl'
 
 export default function Profile() {
+  const wallet = useTonWallet()
+  const address = useSlicedAddress(
+    wallet?.account.address,
+    wallet?.account.chain,
+  )
   const t = useTranslations('game')
+  const tonConnectButtonRef = useRef<HTMLButtonElement>(null)
+  const handleClickTonConnect = () => {
+    console.log('Button clicked')
+    if (tonConnectButtonRef.current) {
+      const button = tonConnectButtonRef.current.querySelector('button')
+      if (button) {
+        button.click()
+      }
+    }
+  }
+
   return (
     <>
       <div className="flex flex-col gap-1 font-extralight">
@@ -17,8 +38,18 @@ export default function Profile() {
               <div className="font-bold flex flex-row gap-2 text-[16px] items-center">
                 <div>Innokenty Kennix</div>
               </div>
-              <div className="text-[12px] flex flex-row gap-2 items-center ">
-                wallet: 0x123456789
+              <div className="text-[12px] flex flex-row gap-1 items-center ">
+                {t('profile.wallet')}:{' '}
+                <span className="font-medium flex flex-row gap-1 items-center">
+                  {address ? (
+                    <>
+                      <Image src={tonSvg} alt={'logo'} width={20} height={20} />{' '}
+                      {address}
+                    </>
+                  ) : (
+                    <>{t('profile.notConnected')}</>
+                  )}
+                </span>
               </div>
             </div>
           </div>
@@ -35,6 +66,23 @@ export default function Profile() {
             </div>
           </div>
         </div>
+        {!wallet && (
+          <>
+            <button
+              onClick={handleClickTonConnect}
+              className={
+                'mt-4 p-4 bg-tertiary-container text-on-tertiary-container rounded-md font-medium flex flex-row gap-2 items-center justify-center'
+              }>
+              <div>{t('profile.connectButton')}</div>
+              <span className="tracking-normal font-bold text-on-surface">
+                +1000 $TGC
+              </span>
+            </button>
+            <button ref={tonConnectButtonRef} className={'hidden'}>
+              <TonConnectButton className="ton-connect-page__button" />
+            </button>
+          </>
+        )}
       </div>
     </>
   )
