@@ -45,26 +45,30 @@ export default function Header() {
             <FaCaretDown />
           </ListboxButton>
           <ListboxOptions
-            className="absolute top-12 right-0 min-w-[150px] z-50 mt-1 rounded-md bg-surface-container-h py-1 text-sm font-medium shadow-lg"
+            className="absolute top-12 right-0 min-w-[220px] z-50 mt-1 rounded-md bg-surface-container-h py-1 text-sm font-medium shadow-lg"
             as="div">
             <div className="flex max-h-[50vh] w-full flex-col overflow-auto">
-              {localesMap.map((el) => (
-                <Listbox.Option
-                  key={el.key}
-                  value={el}
-                  as="div"
-                  className={`flex flex-row items-center cursor-pointer gap-2 py-2 px-4 ${el.key === locale && 'bg-surface-container-l2'} focus:border-none`}>
-                  <Image
-                    src={el.icon}
-                    alt={'flag'}
-                    width={52 / 2}
-                    height={40 / 2}
-                  />
-                  <div className="text-base-content/50 text-xs flex flex-row gap-1 items-center">
-                    {el.title} [{el.key.toUpperCase()}]
-                  </div>
-                </Listbox.Option>
-              ))}
+              {localesMap
+                .sort((a, b) => {
+                  return a.key.localeCompare(b.key)
+                })
+                .map((el) => (
+                  <Listbox.Option
+                    key={el.key}
+                    value={el}
+                    as="div"
+                    className={`flex flex-row items-center cursor-pointer gap-2 py-2 px-4 ${el.key === locale && 'bg-surface-container-l2'} focus:border-none`}>
+                    <Image
+                      src={el.icon}
+                      alt={'flag'}
+                      width={52 / 2}
+                      height={40 / 2}
+                    />
+                    <div className="text-base-content/50 text-xs flex flex-row gap-1 items-center">
+                      {el.title} [{el.key.toUpperCase()}]
+                    </div>
+                  </Listbox.Option>
+                ))}
             </div>
           </ListboxOptions>
         </Listbox>
