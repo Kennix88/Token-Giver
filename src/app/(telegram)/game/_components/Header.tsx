@@ -3,7 +3,12 @@ import tonSvg from '@/app/_assets/ton.svg'
 import { localesMap } from '@/core/i18n/config'
 import { setLocale } from '@/core/i18n/locale'
 import { Locale } from '@/core/i18n/types'
-import { Listbox, ListboxButton, ListboxOptions } from '@headlessui/react'
+import {
+  Listbox,
+  ListboxButton,
+  ListboxOption,
+  ListboxOptions,
+} from '@headlessui/react'
 import Image from 'next/image'
 import { useState } from 'react'
 import { FaCaretDown } from 'react-icons/fa6'
@@ -53,7 +58,7 @@ export default function Header() {
                   return a.key.localeCompare(b.key)
                 })
                 .map((el) => (
-                  <Listbox.Option
+                  <ListboxOption
                     key={el.key}
                     value={el}
                     as="div"
@@ -67,7 +72,7 @@ export default function Header() {
                     <div className="text-base-content/50 text-xs flex flex-row gap-1 items-center">
                       {el.title} [{el.key.toUpperCase()}]
                     </div>
-                  </Listbox.Option>
+                  </ListboxOption>
                 ))}
             </div>
           </ListboxOptions>

@@ -20,6 +20,7 @@ export function init(debug: boolean): void {
   initSDK()
 
   // Mount all components used in the project.
+  // eslint-disable-next-line @typescript-eslint/no-unused-expressions
   backButton.isSupported() && backButton.mount()
   miniApp.mount()
   themeParams.mount()

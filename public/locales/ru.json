@@ -7,11 +7,14 @@
       "friends": "Друзья",
       "games": "Игры"
     },
-    "profile": {
-      "title": "Профиль",
-      "wallet": "Кошелек",
-      "notConnected": "Не подключен",
-      "connectButton": "Подключить кошелек"
+    "home": {
+      "profile": {
+        "title": "Профиль",
+        "wallet": "Кошелек",
+        "notConnected": "Не подключен",
+        "connectButton": "Подключить кошелек"
+      },
+      "dailyCheckIn": "Ежедневный вход"
     }
   }
 }

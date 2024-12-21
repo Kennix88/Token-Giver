@@ -13,7 +13,7 @@ export default function Profile() {
     wallet?.account.address,
     wallet?.account.chain,
   )
-  const t = useTranslations('game')
+  const t = useTranslations('game.home')
   const tonConnectButtonRef = useRef<HTMLButtonElement>(null)
   const handleClickTonConnect = () => {
     console.log('Button clicked')

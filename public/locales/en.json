@@ -7,11 +7,14 @@
       "friends": "Friends",
       "games": "Games"
     },
-    "profile": {
-      "title": "Profile",
-      "wallet": "Wallet",
-      "notConnected": "Not connected",
-      "connectButton": "Connect a wallet"
+    "home": {
+      "profile": {
+        "title": "Profile",
+        "wallet": "Wallet",
+        "notConnected": "Not connected",
+        "connectButton": "Connect a wallet"
+      },
+      "dailyCheckIn": "Daily Check-In"
     }
   }
 }
