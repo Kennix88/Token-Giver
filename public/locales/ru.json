@@ -14,7 +14,11 @@
         "notConnected": "Не подключен",
         "connectButton": "Подключить кошелек"
       },
-      "dailyCheckIn": "Ежедневный вход"
+      "dailyCheckIn": "Ежедневный вход",
+      "tasksBanner": {
+        "title": "Ваша награда",
+        "button": "Получить"
+      }
     }
   }
 }

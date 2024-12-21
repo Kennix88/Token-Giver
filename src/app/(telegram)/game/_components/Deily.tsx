@@ -25,17 +25,17 @@ export default function Deily() {
   ]
 
   return (
-    <div className="flex flex-row gap-2 items-center justify-between p-2 bg-surface-container-l2 rounded-md">
+    <div className="flex flex-row gap-2 items-center justify-between p-2 border-surface-container-h border rounded-md">
       <div className="flex flex-row gap-2 items-center text-sm text-nowrap">
         <MdOutlineCalendarMonth /> {t('dailyCheckIn')}
       </div>
-      <div className="flex flex-row flex-wrap gap-1 items-center justify-end rounded-md">
+      <div className="flex flex-row flex-wrap gap-1 items-center justify-end ">
         {days
           .sort((a) => (a ? -1 : 1))
           .map((day, index) => (
             <div
               key={index}
-              className={`w-[3px] rounded-xs h-2 ${day ? 'bg-primary' : 'bg-surface-container-h'}`}></div>
+              className={`w-[2px] rounded-full h-2 ${day ? 'bg-primary' : 'bg-surface-container-h2'}`}></div>
           ))}
       </div>
     </div>

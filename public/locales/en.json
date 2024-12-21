@@ -14,7 +14,11 @@
         "notConnected": "Not connected",
         "connectButton": "Connect a wallet"
       },
-      "dailyCheckIn": "Daily Check-In"
+      "dailyCheckIn": "Daily Check-In",
+      "tasksBanner": {
+        "title": "Your reward",
+        "button": "Receive"
+      }
     }
   }
 }
