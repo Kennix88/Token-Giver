@@ -42,22 +42,22 @@ export default function NavBar() {
     <div
       className={`bottom-0 left-0 right-0 fixed grid grid-cols-5 grid-rows-1 gap-2 p-2 rounded-t-xl bg-surface-container-l2`}>
       {navItems.map((item) => (
-        <div
+        <Link
+          href={`/game${item.href}`}
           key={item.name}
           className={`flex flex-col items-center justify-center font-[600] text-[12px] gap-1 ${
             location !== `/game${item.href}`
               ? 'text-on-surface-variant'
               : 'text-on-surface'
           }`}>
-          <Link
+          <div
             className={`px-3 py-1 rounded-lg ${
               location !== `/game${item.href}`
                 ? 'text-on-surface-variant'
                 : 'text-on-surface bg-secondary-container'
-            }`}
-            href={`/game${item.href}`}>
+            }`}>
             {item.icon}
-          </Link>
+          </div>
           <span
             className={` ${
               location !== `/game${item.href}`
@@ -66,7 +66,7 @@ export default function NavBar() {
             }`}>
             {item.name}
           </span>
-        </div>
+        </Link>
       ))}
     </div>
   )

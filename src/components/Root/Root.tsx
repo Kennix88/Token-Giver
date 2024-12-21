@@ -3,6 +3,7 @@
 import {
   initData,
   miniApp,
+  postEvent,
   useLaunchParams,
   useSignal,
 } from '@telegram-apps/sdk-react'
@@ -18,6 +19,16 @@ import { useDidMount } from '@/hooks/useDidMount'
 
 import { AppRoot } from '@telegram-apps/telegram-ui'
 import './styles.css'
+
+import resolveConfig from 'tailwindcss/resolveConfig'
+import config from '../../../tailwind.config.ts'
+const tailwindConfig = resolveConfig(config)
+// @ts-ignore
+const headerColor = tailwindConfig.theme.colors.background
+// @ts-ignore
+const backgroundColor = tailwindConfig.theme.colors['surface-container-l2']
+
+console.log(headerColor, backgroundColor)
 
 function RootInner({ children }: PropsWithChildren) {
   const isDev = process.env.NODE_ENV === 'development'
@@ -38,6 +49,9 @@ function RootInner({ children }: PropsWithChildren) {
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     initDataUser && setLocale(initDataUser.languageCode)
   }, [initDataUser])
+
+  postEvent('web_app_set_header_color', { color: headerColor })
+  postEvent('web_app_set_background_color', { color: backgroundColor })
 
   return (
     <TonConnectUIProvider manifestUrl="https://kennix.vpnsib.com/tonconnect-manifest.json">

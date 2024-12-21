@@ -3,5 +3,8 @@
     "prettier",
     "simple-import-sort"
   ],
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off"
+  }
 }
