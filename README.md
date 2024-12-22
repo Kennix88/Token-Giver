@@ -49,7 +49,7 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
     - [ ] **Partner Tasks** - Component
     - [ ] **Quests** - Component
   - [ ] **Leaders** - Page
-    - [ ] **Statistics** - Component
+    - [x] **Statistics** - Component
     - [ ] **King The Hill** - Component
     - [ ] **Tabs** - Component
     - [ ] **Token Leaders** - Component

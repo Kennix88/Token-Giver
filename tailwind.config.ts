@@ -15,6 +15,8 @@ const config: Config = {
         bronze: '#CD7F32',
         silver: '#C0C0C0',
         gold: '#FFD700',
+        platinum: '#E5E4E2',
+        deamond: '#B9F2FF',
         primary: '#cfbcff',
         'on-primary': '#381e72',
         'primary-container': '#4f378a',

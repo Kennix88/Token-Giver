@@ -1,6 +1,7 @@
 'use client'
 import { useSlicedAddress } from '@/hooks/useSlicedAddress'
 import addSuffixToNumber from '@/utils/addSuffixToNumber.util'
+import limitLengthString from '@/utils/limitLengthString.util.ts'
 import { TonConnectButton, useTonWallet } from '@tonconnect/ui-react'
 import { useRef } from 'react'
 import { FaWallet } from 'react-icons/fa6'
@@ -34,7 +35,7 @@ export default function Profile() {
           </div>
           <div className="flex flex-col gap-0">
             <div className="font-bold flex flex-row gap-2 text-[16px] items-center">
-              <div>Innokenty Kennix</div>
+              <div>{limitLengthString('Innokenty Kennix')}</div>
             </div>
             <div className="text-[12px] flex flex-row gap-1 items-center font-medium">
               {address && (
