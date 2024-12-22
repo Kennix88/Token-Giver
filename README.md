@@ -26,6 +26,57 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
 
 ---
 #### In the process of development!
+## Tasks
+- Before the release of the basic version
+- [ ] **Telegram mini app (TMA)**
+  - [x] **Header** - Component
+  - [x] **Navigation** - Component
+  - [x] **GamesList** - Component
+  - [ ] **Rewards** - Component
+  - [ ] **Boost score** - Component
+  - [ ] **Plus status payment** - Component
+  - [ ] **Welcome** - Page
+  - [x] **Home** - Page
+    - [x] **Profile** - Component
+    - [x] **Ton Connect** - Component
+    - [x] **Daily Check-In** - Component
+    - [x] **TasksBanner** - Component
+  - [ ] **Tasks** - Page
+    - [ ] **Tabs** - Component
+    - [ ] **Limited Tasks** - Component
+    - [ ] **Deily Tasks** - Component
+    - [ ] **In-Game Tasks** - Component
+    - [ ] **Partner Tasks** - Component
+    - [ ] **Quests** - Component
+  - [ ] **Leaders** - Page
+    - [ ] **Tabs** - Component
+    - [ ] **Token Leaders** - Component
+    - [ ] **Deamod Leaders** - Component
+    - [ ] **Refferals Leaders** - Component
+    - [ ] **Statistics** - Component
+    - [ ] **King The Hill** - Component
+  - [ ] **Friends** - Page
+    - [ ] **Statistics** - Component
+    - [ ] **Share** - Component
+    - [ ] **Conditions** - Component
+    - [ ] **Friends List** - Component
+  - [x] **Games** - Page
+- [ ] **Admin panel**
+  - [ ] **Dashboard** - Page
+  - [ ] **Users** - Page
+  - [ ] **Settings** - Page
+  - [ ] **Analytics** - Page
+  - [ ] **Tasks** - Page
+- [ ] **Backend**
+- After the release of the basic version
+- [ ] **BEP20 network**
+- [ ] **Solana network**
+- [ ] **ETH network**
+- [ ] **Theme switcher**
+- [ ] **ADS Gram**
+- [ ] **Add more languages**
+- [ ] **Add games**
+- [ ] **Crypto payments**
 
 ## 💵 Sponsorship
 If you want to support me, I will be very happy about it. 🥺👉👈

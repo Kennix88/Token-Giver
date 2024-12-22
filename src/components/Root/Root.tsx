@@ -28,8 +28,6 @@ const headerColor = tailwindConfig.theme.colors.background
 // @ts-ignore
 const backgroundColor = tailwindConfig.theme.colors['surface-container-l2']
 
-console.log(headerColor, backgroundColor)
-
 function RootInner({ children }: PropsWithChildren) {
   const isDev = process.env.NODE_ENV === 'development'
 

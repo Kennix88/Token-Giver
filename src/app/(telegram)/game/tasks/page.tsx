@@ -2,7 +2,7 @@ import { Page } from '@/components/Page'
 
 export default function Tasks() {
   return (
-    <Page back={true}>
+    <Page back={false}>
       <div className="flex flex-col gap-4">
         <div>Tasks</div>
       </div>

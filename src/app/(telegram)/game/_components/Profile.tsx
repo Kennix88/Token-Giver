@@ -60,14 +60,14 @@ export default function Profile() {
         </div>
       </div>
       {!wallet && (
-        <div className="flex flex-col gap-2 items-end">
+        <div className="flex flex-col gap-2">
           <button
             onClick={handleClickTonConnect}
             className={
-              'mt-4 p-4 bg-tertiary-container text-on-tertiary-container rounded-md font-medium flex flex-row gap-2 items-center justify-center'
+              'mt-4 p-4 bg-tertiary-container text-on-tertiary-container rounded-md font-medium flex flex-row gap-2 items-center justify-between'
             }>
             <div className="flex flex-row gap-2 items-center text-nowrap">
-              <FaWallet /> {t('profile.connectButton')}
+              {t('profile.connectButton')}
             </div>
             <span className="tracking-normal font-bold text-on-surface text-nowrap">
               +1000 $TGC
