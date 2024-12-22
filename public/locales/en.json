@@ -32,6 +32,10 @@
         "day": "Daily",
         "week": "Weekly",
         "month": "Monthly"
+      },
+      "kingTheHill": {
+        "title": "King of the Hill",
+        "button": "Become a King"
       }
     }
   }

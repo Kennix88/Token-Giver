@@ -18,8 +18,14 @@ export default function Timer({ date }: { date: Date }) {
     const hours = Math.floor((seconds % 86400) / 3600)
     const minutes = Math.floor((seconds % 3600) / 60)
     const secs = seconds % 60
+    const daysStr = days > 0 ? `${days}d ` : ''
+    const hoursStr =
+      hours > 0 ? (hours < 10 ? `0${hours}h ` : `${hours}h `) : '00h'
+    const minutesStr =
+      minutes > 0 ? (minutes < 10 ? `0${minutes}m ` : `${minutes}m `) : '00m'
+    const secsStr = secs > 0 ? (secs < 10 ? `0${secs}s` : `${secs}s`) : '00s'
 
-    return `${days <= 0 ? '' : days + ':'}${hours <= 0 && days <= 0 ? '' : hours + ':'}${minutes <= 0 && (days <= 0 || hours <= 0) ? '' : minutes + ':'}${secs <= 0 && (days <= 0 || hours <= 0 || minutes <= 0) ? '' : secs}`
+    return `${daysStr}${hoursStr}${minutesStr}${secsStr}`
   }
 
   return (

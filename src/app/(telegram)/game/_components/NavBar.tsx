@@ -1,8 +1,8 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { BiSolidCrown } from 'react-icons/bi'
 import { FaHome, FaTasks, FaUserFriends } from 'react-icons/fa'
-import { FaStar } from 'react-icons/fa6'
 import { IoLogoGameControllerA } from 'react-icons/io'
 import { useTranslations } from 'use-intl'
 
@@ -24,7 +24,7 @@ export default function NavBar() {
     {
       name: t('menu.leaders'),
       href: '/leaders',
-      icon: <FaStar className="text-2xl" />,
+      icon: <BiSolidCrown className="text-2xl" />,
     },
     {
       name: t('menu.friends'),

@@ -65,7 +65,7 @@ export default function Profile() {
           <button
             onClick={handleClickTonConnect}
             className={
-              'mt-4 p-4 bg-tertiary-container text-on-tertiary-container rounded-md font-medium flex flex-row gap-2 items-center justify-between'
+              'mt-4 p-4 bg-info-container text-on-info-container rounded-md font-medium flex flex-row gap-2 items-center justify-between'
             }>
             <div className="flex flex-row gap-2 items-center text-nowrap">
               {t('profile.connectButton')}
