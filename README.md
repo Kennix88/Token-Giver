@@ -49,12 +49,12 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
     - [ ] **Partner Tasks** - Component
     - [ ] **Quests** - Component
   - [ ] **Leaders** - Page
+    - [ ] **Statistics** - Component
+    - [ ] **King The Hill** - Component
     - [ ] **Tabs** - Component
     - [ ] **Token Leaders** - Component
     - [ ] **Deamod Leaders** - Component
     - [ ] **Refferals Leaders** - Component
-    - [ ] **Statistics** - Component
-    - [ ] **King The Hill** - Component
   - [ ] **Friends** - Page
     - [ ] **Statistics** - Component
     - [ ] **Share** - Component
@@ -77,6 +77,7 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
 - [ ] **Add more languages**
 - [ ] **Add games**
 - [ ] **Crypto payments**
+- [ ] **Native assignment placement by users**
 
 ## 💵 Sponsorship
 If you want to support me, I will be very happy about it. 🥺👉👈

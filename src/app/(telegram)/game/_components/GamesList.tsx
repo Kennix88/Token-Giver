@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'use-intl'
 
-export default function GamesCard() {
+export default function GamesList() {
   const t = useTranslations('game')
   return (
     <div className="flex flex-col gap-1 font-extralight">

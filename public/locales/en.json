@@ -19,9 +19,19 @@
       "tasksBanner": {
         "title": "Your reward",
         "button": "Receive"
-      },
-      "games": {
-        "title": "Mini-Games"
+      }
+    },
+    "games": {
+      "title": "Mini-Games"
+    },
+    "leaders": {
+      "statistics": {
+        "title": "Statistics",
+        "users": "Users",
+        "online": "Online",
+        "day": "Daily",
+        "week": "Weekly",
+        "month": "Monthly"
       }
     }
   }
