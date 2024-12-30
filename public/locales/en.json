@@ -1,6 +1,7 @@
 {
   "game": {
     "soon": "Soon...",
+    "boostButton": "Boost your score",
     "menu": {
       "home": "Home",
       "tasks": "Tasks",

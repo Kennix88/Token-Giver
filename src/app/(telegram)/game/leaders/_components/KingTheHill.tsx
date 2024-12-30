@@ -14,7 +14,7 @@ export default function KingTheHill() {
         {t('title')}
       </div>
       <div className="bg-surface-container-l2 p-4 rounded-md flex flex-col gap-4 text-sm">
-        <div className="flex flex-row gap-2 flex-wrap col-span-2 items-center">
+        <div className="flex flex-row gap-2 col-span-2 items-center">
           <div className="relative flex justify-center items-center p-1 rounded-md bg-primary w-[40px] h-[40px]">
             🤖
             <BiSolidCrown className="absolute text-platinum left-[-8px] top-[-14px] rotate-[340deg] text-2xl" />
@@ -27,14 +27,15 @@ export default function KingTheHill() {
               <Timer date={new Date('12/22/2024')} />=
               <div className="flex flex-row gap-1 items-center bg-surface-container-h py-1 px-2 rounded-md text-sm">
                 <div className="font-light opacity-70 ">
-                  +<Multiplier date={new Date('12/22/2024')} multiplier={10} />
+                  +
+                  <Multiplier date={new Date('12/22/2024')} multiplier={10} />
                 </div>
                 <div className="font-bold">$TGC</div>
               </div>
             </div>
           </div>
         </div>
-        <button className="bg-primary text-sm text-on-primary font-medium px-4 py-2 rounded-md">
+        <button className="bg-primary-container text-sm text-on-primary-container font-medium px-4 py-2 rounded-md flex flex-row gap-2 items-center justify-center">
           {t('button')}
         </button>
       </div>

@@ -25,7 +25,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
         <NextUIProvider>
           <I18nProvider>
             <Root>
-              <div className="p-4 flex flex-col gap-4">
+              <div className="pt-4 px-4 pb-[80px] flex flex-col gap-4">
                 <Header />
                 {children}
               </div>

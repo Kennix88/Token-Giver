@@ -1,4 +1,5 @@
 'use client'
+import BoostButton from '@/app/(telegram)/game/_components/BoostButton.tsx'
 import { useSlicedAddress } from '@/hooks/useSlicedAddress'
 import addSuffixToNumber from '@/utils/addSuffixToNumber.util'
 import limitLengthString from '@/utils/limitLengthString.util.ts'
@@ -60,25 +61,28 @@ export default function Profile() {
           </div>
         </div>
       </div>
-      {!wallet && (
-        <div className="flex flex-col gap-2">
-          <button
-            onClick={handleClickTonConnect}
-            className={
-              'mt-4 p-4 bg-info-container text-on-info-container rounded-md font-medium flex flex-row gap-2 items-center justify-between'
-            }>
-            <div className="flex flex-row gap-2 items-center text-nowrap">
-              {t('profile.connectButton')}
-            </div>
-            <span className="tracking-normal font-bold text-on-surface text-nowrap">
-              +1000 $TGC
-            </span>
-          </button>
-          <button ref={tonConnectButtonRef} className={'hidden'}>
-            <TonConnectButton className="ton-connect-page__button" />
-          </button>
-        </div>
-      )}
+      <div className={'mt-4 flex flex-col gap-4'}>
+        <BoostButton />
+        {!wallet && (
+          <div className="flex flex-col gap-2">
+            <button
+              onClick={handleClickTonConnect}
+              className={
+                'p-4 bg-info-container text-on-info-container rounded-md font-medium flex flex-row gap-2 items-center justify-between'
+              }>
+              <div className="flex flex-row gap-2 items-center text-nowrap">
+                {t('profile.connectButton')}
+              </div>
+              <span className="tracking-normal font-bold text-on-surface text-nowrap">
+                +1000 $TGC
+              </span>
+            </button>
+            <button ref={tonConnectButtonRef} className={'hidden'}>
+              <TonConnectButton className="ton-connect-page__button" />
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   )
 }

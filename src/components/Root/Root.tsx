@@ -56,7 +56,7 @@ function RootInner({ children }: PropsWithChildren) {
       <AppRoot
         appearance={isDark ? 'dark' : 'light'}
         platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
-        className="bg-background text-on-surface w-screen min-h-screen tracking-wider">
+        className="bg-background text-on-surface max-w-screen min-h-screen tracking-wider">
         {children}
       </AppRoot>
     </TonConnectUIProvider>

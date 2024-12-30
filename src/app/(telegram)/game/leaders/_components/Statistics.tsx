@@ -9,22 +9,6 @@ export default function Statistics() {
       title: 'users',
       value: 16470,
     },
-    {
-      title: 'online',
-      value: 14,
-    },
-    {
-      title: 'day',
-      value: 124,
-    },
-    {
-      title: 'week',
-      value: 500,
-    },
-    {
-      title: 'month',
-      value: 1647,
-    },
   ]
 
   return (
