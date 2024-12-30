@@ -24,17 +24,19 @@ export default function KingTheHill() {
               <div>{limitLengthString('Innokenty Kennix')}</div>
             </div>
             <div className="text-[12px] flex flex-row gap-1 items-center font-medium">
-              <Timer date={new Date('12/22/2024')} />=
-              <div className="flex flex-row gap-1 items-center bg-surface-container-h py-1 px-2 rounded-md text-sm">
-                <div className="font-light opacity-70 ">
-                  +
-                  <Multiplier date={new Date('12/22/2024')} multiplier={10} />
-                </div>
-                <div className="font-bold">$TGC</div>
-              </div>
+              <Timer date={new Date('12/22/2024')} />
             </div>
           </div>
         </div>
+        <div className="flex flex-row gap-1 items-center justify-center bg-surface-container-h py-1 px-2 rounded-md text-sm">
+          🎁
+          <div className="font-light opacity-70 ">
+            +
+            <Multiplier date={new Date('12/22/2024')} multiplier={10} />
+          </div>
+          <div className="font-bold">$TGC</div>
+        </div>
+
         <button className="bg-primary-container text-sm text-on-primary-container font-medium px-4 py-2 rounded-md flex flex-row gap-2 items-center justify-center">
           {t('button')}
         </button>

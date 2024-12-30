@@ -42,6 +42,8 @@ function RootInner({ children }: PropsWithChildren) {
   const isDark = useSignal(miniApp.isDark)
   const initDataUser = useSignal(initData.user)
 
+  console.log(initDataUser)
+
   // Set the user locale.
   useEffect(() => {
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
