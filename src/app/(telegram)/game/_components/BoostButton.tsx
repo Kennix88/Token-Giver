@@ -12,7 +12,7 @@ export default function BoostButton() {
       className={
         'bg-error-container text-sm text-on-error-container font-medium px-4 py-2 rounded-md flex flex-row gap-2 items-center justify-center cursor-pointer'
       }>
-      <Image src={tgStarSvg} alt={'logo'} width={15} height={15} />
+      <Image src={tgStarSvg} alt={'star'} width={15} height={15} />
       {t('boostButton')}
     </button>
   )
