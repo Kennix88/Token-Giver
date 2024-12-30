@@ -37,6 +37,10 @@
       "kingTheHill": {
         "title": "King of the Hill",
         "button": "Become a King"
+      },
+      "list": {
+        "your": "Your position",
+        "top": "Top 100"
       }
     }
   }

@@ -5,8 +5,11 @@ import getRandomEmojiAvatar from '@/utils/getRandomEmojiAvatar.ts'
 import limitLengthString from '@/utils/limitLengthString.util.ts'
 import Image from 'next/image'
 import { BiSolidCrown } from 'react-icons/bi'
+import { RiVerifiedBadgeFill } from 'react-icons/ri'
+import { useTranslations } from 'use-intl'
 
 export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
+  const t = useTranslations('game.leaders.list')
   const date = {
     user: {
       id: 6,
@@ -76,7 +79,7 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
     <div className={'flex flex-col gap-4'}>
       <div className="flex flex-col gap-1">
         <div className="px-4 opacity-50 flex flex-row gap-2 items-center">
-          Your place
+          {t('your')}
         </div>
         <div
           className={`flex p-4 flex-row gap-2 col-span-2 justify-between rounded-md items-center ${date.user.place === 1 ? 'bg-gold bg-opacity-20' : date.user.place === 2 ? 'bg-silver bg-opacity-20 ' : date.user.place === 3 ? 'bg-bronze bg-opacity-20 ' : 'bg-surface-container-l2'}`}>
@@ -102,6 +105,9 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
             <div className="flex flex-col gap-1">
               <div className="font-bold flex flex-row gap-2 text-[16px] items-center">
                 <div>{limitLengthString(date.user.name)}</div>
+                {date.user.isVerified && (
+                  <RiVerifiedBadgeFill className="text-blue-500" />
+                )}
               </div>
               <div className="text-[12px] flex flex-row gap-1 items-center opacity-80 font-medium">
                 {date.user.score}{' '}
@@ -126,7 +132,7 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
       </div>
       <div className="flex flex-col gap-1">
         <div className="px-4 opacity-50 flex flex-row gap-2 items-center">
-          Top 100
+          {t('top')}
         </div>
         <div className="flex flex-col bg-surface-container-l2 rounded-md">
           {date.list.map((item, index) => (
@@ -153,8 +159,11 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
                   )}
                 </div>
                 <div className="flex flex-col gap-1">
-                  <div className="font-bold flex flex-row gap-2 text-[16px] items-center">
-                    <div>{limitLengthString(item.name)}</div>
+                  <div className="font-bold flex flex-row gap-1 text-[16px] items-center">
+                    <div>{limitLengthString(item.name)}</div>{' '}
+                    {item.isVerified && (
+                      <RiVerifiedBadgeFill className="text-blue-500" />
+                    )}
                   </div>
                   <div className="text-[12px] flex flex-row gap-1 items-center opacity-80 font-medium">
                     {item.score}{' '}
