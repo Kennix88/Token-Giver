@@ -1,6 +1,7 @@
 'use client'
 
 import { LeadersTypeEnum } from '@/types/leadersType.enum.ts'
+import addSuffixToNumber from '@/utils/addSuffixToNumber.util.ts'
 import getRandomEmojiAvatar from '@/utils/getRandomEmojiAvatar.ts'
 import limitLengthString from '@/utils/limitLengthString.util.ts'
 import Image from 'next/image'
@@ -28,7 +29,7 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
           'https://t.me/i/userpic/320/qTKXYJUegzVtf9SzHF3vUV-XsjDWBWnWdTi_ygkrbaA.svg',
         name: 'Username 1',
         isVerified: true,
-        score: 700,
+        score: 7010,
       },
       {
         id: 2,
@@ -110,12 +111,12 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
                 )}
               </div>
               <div className="text-[12px] flex flex-row gap-1 items-center opacity-80 font-medium">
-                {date.user.score}{' '}
+                {addSuffixToNumber(date.user.score, 2)}{' '}
                 {type == LeadersTypeEnum.TOKEN
                   ? '$TGC'
                   : type == LeadersTypeEnum.DEAMOND
                     ? '💎'
-                    : ''}
+                    : '$TGC'}
               </div>
             </div>
           </div>
@@ -166,12 +167,12 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
                     )}
                   </div>
                   <div className="text-[12px] flex flex-row gap-1 items-center opacity-80 font-medium">
-                    {item.score}{' '}
+                    {addSuffixToNumber(item.score, 2)}{' '}
                     {type == LeadersTypeEnum.TOKEN
                       ? '$TGC'
                       : type == LeadersTypeEnum.DEAMOND
                         ? '💎'
-                        : ''}
+                        : '$TGC'}
                   </div>
                 </div>
               </div>

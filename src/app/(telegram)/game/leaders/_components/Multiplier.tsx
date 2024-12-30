@@ -1,5 +1,6 @@
 'use client'
 
+import addSuffixToNumber from '@/utils/addSuffixToNumber.util.ts'
 import { useEffect, useState } from 'react'
 
 export default function Multiplier({
@@ -23,5 +24,5 @@ export default function Multiplier({
 
   const result = minutes * multiplier
 
-  return <>{result.toLocaleString('en-US')}</>
+  return <>{addSuffixToNumber(result, 2)}</>
 }

@@ -41,6 +41,11 @@
       "list": {
         "your": "Your position",
         "top": "Top 100"
+      },
+      "tabs": {
+        "token": "Tokens",
+        "deamond": "Deamonds",
+        "referral": "Referral"
       }
     }
   }

@@ -33,6 +33,7 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
   - [x] **Navigation** - Component
   - [x] **GamesList** - Component
   - [ ] **Rewards** - Component
+  - [ ] **Boost score** - Page
   - [x] **Boost score button** - Component
   - [ ] **Plus status** - Page
   - [ ] **Plus status button** - Component
@@ -52,9 +53,9 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
   - [ ] **Leaders** - Page
     - [x] **Statistics** - Component
     - [x] **King The Hill** - Component
-    - [ ] **Tabs** - Component
-    - [ ] **Token Leaders** - Component
-    - [ ] **Deamod Leaders** - Component
+    - [x] **Tabs** - Component
+    - [x] **Token Leaders** - Component
+    - [x] **Deamod Leaders** - Component
     - [ ] **Refferals Leaders** - Component
   - [ ] **Friends** - Page
     - [ ] **Statistics** - Component

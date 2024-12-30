@@ -12,7 +12,6 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@nextui-org/react": "^2.6.8",
-    "@nextui-org/tabs": "^2.2.5",
     "@telegram-apps/sdk-react": "^2.0.5",
     "@telegram-apps/telegram-ui": "^2.1.5",
     "@ton/core": "^0.59.0",
