@@ -12,6 +12,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        social: {
+          telegram: '#26A5E4',
+          x: '#000000',
+          instagram: '#FF0069',
+          youtube: '#FF0000',
+          github: '#181717',
+          vk: '#0077FF',
+          coinmarketcap: '#17181B',
+          coinbase: '#0052FF',
+          kucoin: '#01BC8D',
+          binance: '#F0B90B',
+          ton: '#0098EA',
+          boost: '#2276f4',
+          friends: '#34c759',
+        },
         bronze: '#CD7F32',
         silver: '#C0C0C0',
         gold: '#FFD700',

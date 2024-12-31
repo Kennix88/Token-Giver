@@ -20,8 +20,8 @@ export default async function RootLayout({ children }: PropsWithChildren) {
   const locale = await getLocale()
 
   return (
-    <html lang={locale} className={'dark'}>
-      <body>
+    <html lang={locale} className={'dark scrollbar-hide'}>
+      <body className="">
         <NextUIProvider>
           <I18nProvider>
             <Root>

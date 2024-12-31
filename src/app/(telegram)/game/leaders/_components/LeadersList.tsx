@@ -14,7 +14,7 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
   const date = {
     user: {
       id: 6,
-      place: 28,
+      place: 2800001,
       photoUrl:
         'https://t.me/i/userpic/320/qTKXYJUegzVtf9SzHF3vUV-XsjDWBWnWdTi_ygkrbaA.svg',
       name: 'Innokenty [Kennix88]',
@@ -51,8 +51,7 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
       {
         id: 4,
         place: 4,
-        photoUrl:
-          'https://t.me/i/userpic/320/qTKXYJUegzVtf9SzHF3vUV-XsjDWBWnWdTi_ygkrbaA.svg',
+        photoUrl: null,
         name: 'Username 4',
         isVerified: false,
         score: 300,
@@ -104,7 +103,7 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
               )}
             </div>
             <div className="flex flex-col gap-1">
-              <div className="font-bold flex flex-row gap-2 text-[16px] items-center">
+              <div className="font-bold flex flex-row gap-2 text-[14px] items-center">
                 <div>{limitLengthString(date.user.name)}</div>
                 {date.user.isVerified && (
                   <RiVerifiedBadgeFill className="text-blue-500" />
@@ -120,14 +119,18 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
               </div>
             </div>
           </div>
-          <div className="font-bold">
-            {date.user.place === 1
-              ? '🥇'
-              : date.user.place === 2
-                ? '🥈'
-                : date.user.place === 3
-                  ? '🥉'
-                  : `#${date.user.place}`}
+          <div className="font-medium text-[18px] flex items-center justify-center">
+            {date.user.place === 1 ? (
+              '🥇'
+            ) : date.user.place === 2 ? (
+              '🥈'
+            ) : date.user.place === 3 ? (
+              '🥉'
+            ) : (
+              <span className="text-[14px]">
+                #{addSuffixToNumber(date.user.place, 2)}
+              </span>
+            )}
           </div>
         </div>
       </div>
@@ -160,7 +163,7 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
                   )}
                 </div>
                 <div className="flex flex-col gap-1">
-                  <div className="font-bold flex flex-row gap-1 text-[16px] items-center">
+                  <div className="font-bold flex flex-row gap-1 text-[14px] items-center">
                     <div>{limitLengthString(item.name)}</div>{' '}
                     {item.isVerified && (
                       <RiVerifiedBadgeFill className="text-blue-500" />
@@ -176,14 +179,18 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
                   </div>
                 </div>
               </div>
-              <div className="font-bold">
-                {item.place === 1
-                  ? '🥇'
-                  : item.place === 2
-                    ? '🥈'
-                    : item.place === 3
-                      ? '🥉'
-                      : `#${item.place}`}
+              <div className="font-medium text-[18px] flex items-center justify-center">
+                {item.place === 1 ? (
+                  '🥇'
+                ) : item.place === 2 ? (
+                  '🥈'
+                ) : item.place === 3 ? (
+                  '🥉'
+                ) : (
+                  <span className="text-[14px]">
+                    #{addSuffixToNumber(item.place, 2)}
+                  </span>
+                )}
               </div>
             </div>
           ))}

@@ -29,7 +29,7 @@ export default function KingTheHill() {
         {t('title')}
       </div>
       <div className="bg-surface-container-l2 p-4 rounded-md flex flex-col gap-4 text-sm">
-        <div className="flex flex-row gap-2 col-span-2 items-center justify-between">
+        <div className="flex flex-row gap-2 items-center justify-between">
           <div className="flex flex-row gap-2 items-center ">
             <div className="relative flex justify-center items-center p-1 rounded-md bg-surface-container w-[40px] h-[40px]">
               {date.user.photoUrl ? (
@@ -49,7 +49,7 @@ export default function KingTheHill() {
               />
             </div>
             <div className="flex flex-col gap-0">
-              <div className="font-bold flex flex-row gap-2 text-[16px] items-center">
+              <div className="font-bold flex flex-row gap-2 text-[14px] items-center">
                 <div>{limitLengthString(date.user.name)}</div>
                 {date.user.isVerified && (
                   <RiVerifiedBadgeFill className="text-blue-500" />
