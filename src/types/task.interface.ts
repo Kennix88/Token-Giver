@@ -4,7 +4,8 @@ export interface TaskInterface {
   title: string
   description: string
   progress: TaskProgressInterface
-  rewards: TaskRewardInterface[]
+  deamonds: number
+  tokens: number
   category: TaskCategoryEnum
   data: string
   icon: TaskIconEnum
@@ -19,11 +20,6 @@ export interface TaskProgressInterface {
   total: number
   isClaimed: boolean
   status: TaskStatusEnum
-}
-
-export interface TaskRewardInterface {
-  code: TaskRewardCodeEnum
-  amount: number
 }
 
 export enum TaskRewardCodeEnum {

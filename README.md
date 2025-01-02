@@ -44,7 +44,7 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
     - [x] **Daily Check-In** - Component
     - [x] **TasksBanner** - Component
   - [ ] **Tasks** - Page
-    - [ ] **Tabs** - Component
+    - [x] **Tabs** - Component
     - [ ] **Limited Tasks** - Component
     - [ ] **Deily Tasks** - Component
     - [ ] **In-Game Tasks** - Component
