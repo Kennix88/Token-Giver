@@ -47,6 +47,15 @@
         "deamond": "Deamonds",
         "referral": "Referral"
       }
+    },
+    "tasks": {
+      "tabs": {
+        "limited": "Limited",
+        "daily": "Daily",
+        "inGame": "In-Game",
+        "partners": "Partners",
+        "quests": "quests"
+      }
     }
   }
 }

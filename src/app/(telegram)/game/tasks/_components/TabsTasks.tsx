@@ -11,8 +11,10 @@ import {
   TaskTypeEnum,
 } from '@/types/task.interface.ts'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
+import { useTranslations } from 'use-intl'
 
 export default function TabsTasks() {
+  const t = useTranslations('game.tasks.tabs')
   const data: {
     list: TaskInterface[]
   } = {
@@ -61,7 +63,7 @@ export default function TabsTasks() {
     {
       tabName: (
         <>
-          Limited{' '}
+          {t('limited')}{' '}
           <span className="text-primary bg-on-primary rounded-full px-1 py-0 text-xs font-bold">
             {limitedList.length}
           </span>
@@ -72,7 +74,7 @@ export default function TabsTasks() {
     {
       tabName: (
         <>
-          Daily{' '}
+          {t('daily')}{' '}
           <span className="text-primary bg-on-primary rounded-full px-1 py-0 text-xs font-bold">
             {dailyList.length}
           </span>
@@ -83,7 +85,7 @@ export default function TabsTasks() {
     {
       tabName: (
         <>
-          In-game{' '}
+          {t('inGame')}{' '}
           <span className="text-primary bg-on-primary rounded-full px-1 py-0 text-xs font-bold">
             {inGameList.length}
           </span>
@@ -94,7 +96,7 @@ export default function TabsTasks() {
     {
       tabName: (
         <>
-          Partners{' '}
+          {t('partners')}{' '}
           <span className="text-primary bg-on-primary rounded-full px-1 py-0 text-xs font-bold">
             {partnerList.length}
           </span>
@@ -105,7 +107,7 @@ export default function TabsTasks() {
     {
       tabName: (
         <>
-          Quests{' '}
+          {t('quests')}{' '}
           <span className="text-primary bg-on-primary rounded-full px-1 py-0 text-xs font-bold">
             {questsList.length}
           </span>
