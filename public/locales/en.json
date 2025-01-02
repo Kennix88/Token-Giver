@@ -28,11 +28,7 @@
     "leaders": {
       "statistics": {
         "title": "Statistics",
-        "users": "Users",
-        "online": "Online",
-        "day": "Daily",
-        "week": "Weekly",
-        "month": "Monthly"
+        "users": "Users"
       },
       "kingTheHill": {
         "title": "King of the Hill",

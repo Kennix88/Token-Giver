@@ -15,15 +15,11 @@ export default function Statistics() {
     stats && (
       <div className="flex flex-col gap-1 font-extralight">
         <div className="px-4 opacity-50">{t('title')}</div>
-        <div className="bg-surface-container-l2 p-4 rounded-md flex flex-row flex-wrap gap-4 text-sm">
-          {stats.map((stat) => (
-            <div key={stat.title} className="flex flex-row gap-2 items-center">
-              <div className="opacity-80">{t(stat.title)}</div>
-              <div className="text-nowrap font-normal ">
-                {addSuffixToNumber(stat.value, 3)}
-              </div>
-            </div>
-          ))}
+        <div className="bg-surface-container-l2 p-4 rounded-md flex flex-row gap-4  items-center justify-between text-sm">
+          <div className="opacity-80">{t('users')}</div>
+          <div className="text-nowrap font-normal ">
+            {addSuffixToNumber(16470, 3)}
+          </div>
         </div>
       </div>
     )

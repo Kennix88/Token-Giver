@@ -1,7 +1,6 @@
 'use client'
 
-import LeadersList from '@/app/(telegram)/game/leaders/_components/LeadersList.tsx'
-import { LeadersTypeEnum } from '@/types/leadersType.enum.ts'
+import TasksList from '@/app/(telegram)/game/tasks/_components/TasksList.tsx'
 import {
   TaskActionEnum,
   TaskCategoryEnum,
@@ -61,59 +60,29 @@ export default function TabsTasks() {
 
   const tabs = [
     {
-      tabName: (
-        <>
-          {t('limited')}{' '}
-          <span className="text-primary bg-on-primary rounded-full px-1 py-0 text-xs font-bold">
-            {limitedList.length}
-          </span>
-        </>
-      ),
-      type: LeadersTypeEnum.TOKEN,
+      tabName: t('limited'),
+      count: limitedList.length,
+      list: limitedList,
     },
     {
-      tabName: (
-        <>
-          {t('daily')}{' '}
-          <span className="text-primary bg-on-primary rounded-full px-1 py-0 text-xs font-bold">
-            {dailyList.length}
-          </span>
-        </>
-      ),
-      type: LeadersTypeEnum.DEAMOND,
+      tabName: t('daily'),
+      count: dailyList.length,
+      list: dailyList,
     },
     {
-      tabName: (
-        <>
-          {t('inGame')}{' '}
-          <span className="text-primary bg-on-primary rounded-full px-1 py-0 text-xs font-bold">
-            {inGameList.length}
-          </span>
-        </>
-      ),
-      type: LeadersTypeEnum.REFERRAL,
+      tabName: t('inGame'),
+      count: inGameList.length,
+      list: inGameList,
     },
     {
-      tabName: (
-        <>
-          {t('partners')}{' '}
-          <span className="text-primary bg-on-primary rounded-full px-1 py-0 text-xs font-bold">
-            {partnerList.length}
-          </span>
-        </>
-      ),
-      type: LeadersTypeEnum.REFERRAL,
+      tabName: t('partners'),
+      count: partnerList.length,
+      list: partnerList,
     },
     {
-      tabName: (
-        <>
-          {t('quests')}{' '}
-          <span className="text-primary bg-on-primary rounded-full px-1 py-0 text-xs font-bold">
-            {questsList.length}
-          </span>
-        </>
-      ),
-      type: LeadersTypeEnum.REFERRAL,
+      tabName: t('quests'),
+      count: questsList.length,
+      list: questsList,
     },
   ]
 
@@ -122,16 +91,19 @@ export default function TabsTasks() {
       <TabList className="flex-wrap flex flex-row items-center justify-center text-nowrap bg-surface-container-l2 rounded-md">
         {tabs.map((tab) => (
           <Tab
-            key={tab.tabName.toString()}
-            className="px-4 grow py-2 data-[selected]:bg-primary data-[selected]:text-on-primary rounded-md flex flex-row items-center justify-center gap-1">
+            key={tab.tabName}
+            className="px-4 grow py-2 font-medium data-[selected]:bg-primary data-[selected]:text-on-primary rounded-md flex flex-row items-center justify-center gap-1">
             {tab.tabName}
+            <span className="text-primary bg-on-primary rounded-full px-1 py-0 text-xs font-bold">
+              {tab.count}
+            </span>
           </Tab>
         ))}
       </TabList>
       <TabPanels>
         {tabs.map((tab) => (
-          <TabPanel key={tab.type}>
-            <LeadersList type={tab.type} />
+          <TabPanel key={tab.tabName + 1}>
+            <TasksList list={tab.list} />
           </TabPanel>
         ))}
       </TabPanels>

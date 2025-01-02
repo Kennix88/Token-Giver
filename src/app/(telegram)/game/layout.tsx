@@ -5,7 +5,6 @@ import type { PropsWithChildren } from 'react'
 import { Root } from '@/components/Root/Root'
 import { I18nProvider } from '@/core/i18n/provider'
 
-import Header from '@/app/(telegram)/game/_components/Header'
 import NavBar from '@/app/(telegram)/game/_components/NavBar'
 import '@/app/_assets/globals.css'
 import { NextUIProvider } from '@nextui-org/react'
@@ -26,7 +25,6 @@ export default async function RootLayout({ children }: PropsWithChildren) {
           <I18nProvider>
             <Root>
               <div className="pt-4 px-4 pb-[80px] flex flex-col gap-4">
-                <Header />
                 {children}
               </div>
               <NavBar />

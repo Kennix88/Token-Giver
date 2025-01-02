@@ -1,14 +1,23 @@
 'use client'
 import BoostButton from '@/app/(telegram)/game/_components/BoostButton.tsx'
+import { localesMap } from '@/core/i18n/config.ts'
+import { setLocale } from '@/core/i18n/locale.ts'
+import { Locale } from '@/core/i18n/types.ts'
 import addSuffixToNumber from '@/utils/addSuffixToNumber.util'
 import getRandomEmojiAvatar from '@/utils/getRandomEmojiAvatar.ts'
 import limitLengthString from '@/utils/limitLengthString.util.ts'
+import {
+  Listbox,
+  ListboxButton,
+  ListboxOption,
+  ListboxOptions,
+} from '@headlessui/react'
 import { TonConnectButton } from '@tonconnect/ui-react'
 import Image from 'next/image'
-import { useRef } from 'react'
-import { FaWallet } from 'react-icons/fa6'
+import { useRef, useState } from 'react'
+import { FaCaretDown, FaWallet } from 'react-icons/fa6'
 import { RiVerifiedBadgeFill } from 'react-icons/ri'
-import { useTranslations } from 'use-intl'
+import { useLocale, useTranslations } from 'use-intl'
 
 export default function Profile() {
   // const wallet = useTonWallet()
@@ -16,6 +25,16 @@ export default function Profile() {
   //   wallet?.account.address,
   //   wallet?.account.chain,
   // )
+  const locale = useLocale()
+  const [localeState, setLocaleState] = useState(
+    localesMap.find((l) => l.key === locale) || localesMap[0],
+  )
+
+  const onChange = (value: { key: string; title: string; icon: string }) => {
+    const locale = value.key as Locale
+    setLocale(locale)
+    setLocaleState(localesMap.find((l) => l.key === locale) || localesMap[0])
+  }
   const t = useTranslations('game.home')
   const tonConnectButtonRef = useRef<HTMLButtonElement>(null)
 
@@ -79,7 +98,52 @@ export default function Profile() {
               </div>
             </div>
           </div>
-          <div></div>
+          <div>
+            <Listbox
+              value={localeState}
+              onChange={(v) => onChange(v)}
+              as="div"
+              className="relative">
+              <ListboxButton
+                as="div"
+                className="relative w-full cursor-pointer text-sm font-medium flex flex-row items-center gap-2 justify-end">
+                <Image
+                  src={localeState.icon}
+                  alt={'flag'}
+                  width={52 / 2}
+                  height={40 / 2}
+                />
+                <FaCaretDown />
+              </ListboxButton>
+              <ListboxOptions
+                className="absolute top-12 right-0 min-w-[220px] z-50 mt-1 rounded-md bg-surface-container-h py-1 text-sm font-medium shadow-lg"
+                as="div">
+                <div className="flex max-h-[50vh] w-full flex-col overflow-auto">
+                  {localesMap
+                    .sort((a, b) => {
+                      return a.key.localeCompare(b.key)
+                    })
+                    .map((el) => (
+                      <ListboxOption
+                        key={el.key}
+                        value={el}
+                        as="div"
+                        className={`flex flex-row items-center cursor-pointer gap-2 py-2 px-4 ${el.key === locale && 'bg-surface-container-l2'} focus:border-none`}>
+                        <Image
+                          src={el.icon}
+                          alt={'flag'}
+                          width={52 / 2}
+                          height={40 / 2}
+                        />
+                        <div className="text-base-content/50 text-xs flex flex-row gap-1 items-center">
+                          {el.title} [{el.key.toUpperCase()}]
+                        </div>
+                      </ListboxOption>
+                    ))}
+                </div>
+              </ListboxOptions>
+            </Listbox>
+          </div>
         </div>
         <hr className="border-0 bg-surface-container h-[1px]" />
         <div className="flex flex-row gap-2 justify-between col-span-2 items-center text-nowrap ">

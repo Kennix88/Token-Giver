@@ -59,6 +59,7 @@ export enum TaskStatusEnum {
 
 export enum TaskIconEnum {
   emoji = 'emoji',
+  ads = 'ads',
   boost = 'boost',
   friends = 'friends',
   age = 'age',
