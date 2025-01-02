@@ -103,7 +103,7 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
               )}
             </div>
             <div className="flex flex-col gap-1">
-              <div className="font-bold flex flex-row gap-2 text-[14px] items-center">
+              <div className="font-bold flex flex-row gap-1 text-[14px] items-center">
                 <div>{limitLengthString(date.user.name)}</div>
                 {date.user.isVerified && (
                   <RiVerifiedBadgeFill className="text-blue-500" />

@@ -56,7 +56,7 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
     - [x] **Tabs** - Component
     - [x] **Token Leaders** - Component
     - [x] **Deamod Leaders** - Component
-    - [ ] **Refferals Leaders** - Component
+    - [x] **Refferals Leaders** - Component
   - [ ] **Friends** - Page
     - [ ] **Statistics** - Component
     - [ ] **Share** - Component

@@ -49,7 +49,7 @@ export default function KingTheHill() {
               />
             </div>
             <div className="flex flex-col gap-0">
-              <div className="font-bold flex flex-row gap-2 text-[14px] items-center">
+              <div className="font-bold flex flex-row gap-1 text-[14px] items-center">
                 <div>{limitLengthString(date.user.name)}</div>
                 {date.user.isVerified && (
                   <RiVerifiedBadgeFill className="text-blue-500" />
