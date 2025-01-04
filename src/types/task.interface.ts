@@ -1,3 +1,5 @@
+import { IconsEnum } from '@/types/icons.enum.ts'
+
 export interface TaskInterface {
   id: number
   action: TaskActionEnum
@@ -8,7 +10,7 @@ export interface TaskInterface {
   tokens: number
   category: TaskCategoryEnum
   data: string
-  icon: TaskIconEnum
+  icon: IconsEnum
   type: TaskTypeEnum
   isPremium: boolean
   partnerIconUrl: string | null
@@ -55,30 +57,4 @@ export enum TaskStatusEnum {
   start = 'start',
   inProgress = 'inProgress',
   finished = 'finished',
-}
-
-export enum TaskIconEnum {
-  emoji = 'emoji',
-  ads = 'ads',
-  boost = 'boost',
-  friends = 'friends',
-  age = 'age',
-  robot = 'robot',
-  premium = 'premium',
-  other = 'other',
-  x = 'x',
-  telegram = 'telegram',
-  youtube = 'youtube',
-  tiktok = 'tiktok',
-  instagram = 'instagram',
-  facebook = 'facebook',
-  discord = 'discord',
-  binance = 'binance',
-  vk = 'vk',
-  github = 'github',
-  kucoin = 'kucoin',
-  coinmarketcap = 'coinmarketcap',
-  coinbase = 'coinbase',
-  viber = 'viber',
-  whatsapp = 'whatsapp',
 }

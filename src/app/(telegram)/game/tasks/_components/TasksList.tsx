@@ -24,7 +24,7 @@ export default function TasksList({ list }: { list: TaskInterface[] }) {
               {task.partnerIconUrl ? (
                 <Image
                   src={task.partnerIconUrl}
-                  alt=""
+                  alt="Partner icon"
                   width={40}
                   height={40}
                   className={'absolute rounded-md'}
@@ -45,9 +45,9 @@ export default function TasksList({ list }: { list: TaskInterface[] }) {
               </div>
             </div>
           </div>
-          <div className="font-medium text-[18px] flex items-center justify-center">
+          <button className="font-medium text-[14px] flex items-center justify-center">
             click
-          </div>
+          </button>
         </div>
       ))}
     </div>
