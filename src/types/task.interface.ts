@@ -13,7 +13,7 @@ export interface TaskInterface {
   icon: IconsEnum
   type: TaskTypeEnum
   isPremium: boolean
-  partnerIconUrl: string | null
+  parnterId: number | null
   experedAt: Date | null
 }
 

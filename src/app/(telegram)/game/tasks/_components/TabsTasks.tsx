@@ -1,10 +1,11 @@
 'use client'
 
 import TasksList from '@/app/(telegram)/game/tasks/_components/TasksList.tsx'
+import { IconsEnum } from '@/types/icons.enum.ts'
+import { PartnersInteface } from '@/types/partners.inteface.ts'
 import {
   TaskActionEnum,
   TaskCategoryEnum,
-  TaskIconEnum,
   TaskInterface,
   TaskStatusEnum,
   TaskTypeEnum,
@@ -15,9 +16,11 @@ import { useTranslations } from 'use-intl'
 export default function TabsTasks() {
   const t = useTranslations('game.tasks.tabs')
   const data: {
-    list: TaskInterface[]
+    partners: PartnersInteface[]
+    tasks: TaskInterface[]
   } = {
-    list: [
+    partners: [],
+    tasks: [
       {
         id: 1,
         title: 'title',
@@ -27,8 +30,8 @@ export default function TabsTasks() {
         category: TaskCategoryEnum.inGame,
         data: '',
         isPremium: false,
-        icon: TaskIconEnum.boost,
-        partnerIconUrl: null,
+        icon: IconsEnum.boost,
+        parnterId: null,
         experedAt: new Date('2023-01-01'),
         action: TaskActionEnum.customEmoji,
         progress: {
@@ -42,19 +45,19 @@ export default function TabsTasks() {
     ],
   }
 
-  const limitedList = data.list.filter(
+  const limitedList = data.tasks.filter(
     (item) => item.category === TaskCategoryEnum.limited,
   )
-  const dailyList = data.list.filter(
+  const dailyList = data.tasks.filter(
     (item) => item.category === TaskCategoryEnum.daily,
   )
-  const inGameList = data.list.filter(
+  const inGameList = data.tasks.filter(
     (item) => item.category === TaskCategoryEnum.inGame,
   )
-  const partnerList = data.list.filter(
+  const partnerList = data.tasks.filter(
     (item) => item.category === TaskCategoryEnum.partners,
   )
-  const questsList = data.list.filter(
+  const questsList = data.tasks.filter(
     (item) => item.category === TaskCategoryEnum.quests,
   )
 
