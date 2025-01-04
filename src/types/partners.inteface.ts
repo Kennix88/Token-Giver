@@ -1,6 +1,6 @@
 export interface PartnersInteface {
-  parnterId: number
-  partnerName: string
-  partnerIconUrl: string
-  partnerBgUrl: string | null
+  id: number
+  name: string
+  iconUrl: string
+  bgUrl: string | null
 }

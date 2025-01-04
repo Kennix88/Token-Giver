@@ -19,11 +19,19 @@ export default function TabsTasks() {
     partners: PartnersInteface[]
     tasks: TaskInterface[]
   } = {
-    partners: [],
+    partners: [
+      {
+        id: 1,
+        name: 'paws',
+        iconUrl:
+          'https://app.paws.community/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fp-a-w-s%2Fquests%2Femoji.png&w=48&q=100',
+        bgUrl: null,
+      },
+    ],
     tasks: [
       {
         id: 1,
-        title: 'title',
+        title: 'Boost channel',
         description: 'description',
         tokens: 100,
         deamonds: 1,
@@ -33,7 +41,28 @@ export default function TabsTasks() {
         icon: IconsEnum.boost,
         parnterId: null,
         experedAt: new Date('2023-01-01'),
-        action: TaskActionEnum.customEmoji,
+        action: TaskActionEnum.link,
+        progress: {
+          current: 0,
+          total: 1,
+          isClaimed: false,
+          status: TaskStatusEnum.start,
+        },
+        type: TaskTypeEnum.social,
+      },
+      {
+        id: 2,
+        title: 'Subscribe to channel',
+        description: 'description',
+        tokens: 1000,
+        deamonds: 1,
+        category: TaskCategoryEnum.partners,
+        data: '',
+        isPremium: false,
+        icon: IconsEnum.telegram,
+        parnterId: 1,
+        experedAt: new Date('2023-01-01'),
+        action: TaskActionEnum.link,
         progress: {
           current: 0,
           total: 1,

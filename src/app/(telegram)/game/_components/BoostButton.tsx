@@ -1,6 +1,6 @@
 'use client'
 
-import tgStarSvg from '@/app/_assets/tgStar.svg'
+import tgStarSvg from '@/app/_assets/icons/tgStar.svg'
 import Image from 'next/image'
 import { useTranslations } from 'use-intl'
 

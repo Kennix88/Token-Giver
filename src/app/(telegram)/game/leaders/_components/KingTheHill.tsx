@@ -1,7 +1,7 @@
 'use client'
 import Multiplier from '@/app/(telegram)/game/leaders/_components/Multiplier.tsx'
 import Timer from '@/app/(telegram)/game/leaders/_components/Timer.tsx'
-import kingSvg from '@/app/_assets/kingTheHill.svg'
+import kingSvg from '@/app/_assets/icons/kingTheHill.svg'
 import getRandomEmojiAvatar from '@/utils/getRandomEmojiAvatar.ts'
 import limitLengthString from '@/utils/limitLengthString.util.ts'
 import Image from 'next/image'
