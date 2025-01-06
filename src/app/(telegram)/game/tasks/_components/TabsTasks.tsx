@@ -22,9 +22,15 @@ export default function TabsTasks() {
     partners: [
       {
         id: 1,
-        name: 'paws',
-        iconUrl:
-          'https://app.paws.community/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fp-a-w-s%2Fquests%2Femoji.png&w=48&q=100',
+        name: 'Paws',
+        iconUrl: 'https://storage.googleapis.com/p-a-w-s/quests/emoji.png',
+        bgUrl:
+          'https://i.pinimg.com/originals/46/6c/4d/466c4d0ec2824e15ff7def79f8ec2789.png',
+      },
+      {
+        id: 2,
+        name: 'Partner 2',
+        iconUrl: 'https://storage.googleapis.com/p-a-w-s/quests/emoji.png',
         bgUrl: null,
       },
     ],
@@ -70,6 +76,48 @@ export default function TabsTasks() {
           status: TaskStatusEnum.start,
         },
         type: TaskTypeEnum.social,
+      },
+      {
+        id: 3,
+        title: 'Visit the website',
+        description: 'description',
+        tokens: 1000,
+        deamonds: 1,
+        category: TaskCategoryEnum.partners,
+        data: '',
+        isPremium: false,
+        icon: IconsEnum.other,
+        parnterId: 1,
+        experedAt: new Date('2023-01-01'),
+        action: TaskActionEnum.link,
+        progress: {
+          current: 0,
+          total: 1,
+          isClaimed: false,
+          status: TaskStatusEnum.start,
+        },
+        type: TaskTypeEnum.website,
+      },
+      {
+        id: 4,
+        title: 'Subscribe to discord server',
+        description: 'description',
+        tokens: 1000,
+        deamonds: 1,
+        category: TaskCategoryEnum.partners,
+        data: '',
+        isPremium: false,
+        icon: IconsEnum.discord,
+        parnterId: 2,
+        experedAt: new Date('2023-01-01'),
+        action: TaskActionEnum.link,
+        progress: {
+          current: 0,
+          total: 1,
+          isClaimed: false,
+          status: TaskStatusEnum.start,
+        },
+        type: TaskTypeEnum.website,
       },
     ],
   }
@@ -126,16 +174,18 @@ export default function TabsTasks() {
             key={tab.tabName}
             className="px-4 grow py-2 font-medium data-[selected]:bg-primary data-[selected]:text-on-primary rounded-md flex flex-row items-center justify-center gap-1">
             {tab.tabName}
-            <span className="text-primary bg-on-primary rounded-full px-1 py-0 text-xs font-bold">
-              {tab.count}
-            </span>
+            {tab.count > 0 && (
+              <span className="text-primary bg-on-primary rounded-full px-1 py-0 text-xs font-bold">
+                {tab.count}
+              </span>
+            )}
           </Tab>
         ))}
       </TabList>
       <TabPanels>
         {tabs.map((tab) => (
           <TabPanel key={tab.tabName + 1}>
-            <TasksList list={tab.list} />
+            <TasksList tasks={tab.list} partners={data.partners} />
           </TabPanel>
         ))}
       </TabPanels>

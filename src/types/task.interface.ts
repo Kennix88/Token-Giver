@@ -51,6 +51,7 @@ export enum TaskCategoryEnum {
   daily = 'daily',
   partners = 'partners',
   quests = 'quests',
+  hiRisk = 'hiRisk',
 }
 
 export enum TaskStatusEnum {
