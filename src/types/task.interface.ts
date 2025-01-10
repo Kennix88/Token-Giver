@@ -8,6 +8,7 @@ export interface TaskInterface {
   progress: TaskProgressInterface
   deamonds: number
   tokens: number
+  isLimited: boolean
   category: TaskCategoryEnum
   data: string
   icon: IconsEnum
@@ -46,7 +47,6 @@ export enum TaskTypeEnum {
   wallet = 'wallet',
 }
 export enum TaskCategoryEnum {
-  limited = 'limited',
   inGame = 'inGame',
   daily = 'daily',
   partners = 'partners',

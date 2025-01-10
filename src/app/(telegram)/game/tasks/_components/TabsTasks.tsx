@@ -42,6 +42,7 @@ export default function TabsTasks() {
         tokens: 100,
         deamonds: 1,
         category: TaskCategoryEnum.inGame,
+        isLimited: false,
         data: '',
         isPremium: false,
         icon: IconsEnum.boost,
@@ -63,6 +64,7 @@ export default function TabsTasks() {
         tokens: 1000,
         deamonds: 1,
         category: TaskCategoryEnum.partners,
+        isLimited: false,
         data: '',
         isPremium: false,
         icon: IconsEnum.telegram,
@@ -84,6 +86,7 @@ export default function TabsTasks() {
         tokens: 1000,
         deamonds: 1,
         category: TaskCategoryEnum.partners,
+        isLimited: false,
         data: '',
         isPremium: false,
         icon: IconsEnum.other,
@@ -105,6 +108,7 @@ export default function TabsTasks() {
         tokens: 1000,
         deamonds: 1,
         category: TaskCategoryEnum.partners,
+        isLimited: false,
         data: '',
         isPremium: false,
         icon: IconsEnum.discord,
@@ -122,9 +126,7 @@ export default function TabsTasks() {
     ],
   }
 
-  const limitedList = data.tasks.filter(
-    (item) => item.category === TaskCategoryEnum.limited,
-  )
+  const limitedList = data.tasks.filter((item) => item.isLimited)
   const dailyList = data.tasks.filter(
     (item) => item.category === TaskCategoryEnum.daily,
   )
@@ -136,6 +138,9 @@ export default function TabsTasks() {
   )
   const questsList = data.tasks.filter(
     (item) => item.category === TaskCategoryEnum.quests,
+  )
+  const hiRiskList = data.tasks.filter(
+    (item) => item.category === TaskCategoryEnum.hiRisk,
   )
 
   const tabs = [
@@ -163,6 +168,11 @@ export default function TabsTasks() {
       tabName: t('quests'),
       count: questsList.length,
       list: questsList,
+    },
+    {
+      tabName: 'Hi-Risk',
+      count: hiRiskList.length,
+      list: hiRiskList,
     },
   ]
 
