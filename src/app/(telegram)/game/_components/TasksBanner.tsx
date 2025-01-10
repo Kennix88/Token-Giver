@@ -8,10 +8,10 @@ export default function TasksBanner() {
   const t = useTranslations('game.home')
 
   return (
-    <div className="flex flex-row gap-2 items-center justify-start ">
+    <div className="flex flex-row gap-2 items-center justify-start">
       <div
         className={
-          'flex flex-row gap-2 px-2 py-1 bg-surface-container-l2 rounded-md text-nowrap'
+          'flex flex-row gap-2 px-2 py-1 bg-surface-container-l2 rounded-md text-nowrap bg-opacity-70'
         }>
         <div className={'flex flex-col gap-1'}>
           <div className={'text-[10px] opacity-50'}>
@@ -27,7 +27,7 @@ export default function TasksBanner() {
       </div>
       <Link
         href={'game/tasks'}
-        className="px-2 py-1 rounded-md bg-primary text-sm text-on-primary font-medium">
+        className="grow px-2 py-1 rounded-md text-center bg-primary text-sm text-on-primary font-medium">
         {t('tasksBanner.button')}
       </Link>
     </div>

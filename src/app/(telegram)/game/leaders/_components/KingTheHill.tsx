@@ -28,7 +28,7 @@ export default function KingTheHill() {
       <div className="px-4 opacity-50 flex flex-row gap-2 items-center">
         {t('title')}
       </div>
-      <div className="bg-surface-container-l2 p-4 rounded-md flex flex-col gap-4 text-sm">
+      <div className="bg-surface-container-l2 p-4 rounded-md flex flex-col gap-4 text-sm bg-opacity-70">
         <div className="flex flex-row gap-2 items-center justify-between">
           <div className="flex flex-row gap-2 items-center ">
             <div className="relative flex justify-center items-center p-1 rounded-md bg-surface-container w-[40px] h-[40px]">

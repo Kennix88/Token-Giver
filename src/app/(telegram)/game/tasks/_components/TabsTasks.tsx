@@ -190,7 +190,7 @@ export default function TabsTasks() {
 
   return (
     <TabGroup className="flex flex-col gap-4">
-      <TabList className="flex-wrap flex flex-row items-center justify-center text-nowrap bg-surface-container-l2 rounded-md">
+      <TabList className="flex-wrap flex flex-row items-center justify-center text-nowrap bg-surface-container-l2 rounded-md bg-opacity-70">
         {tabs.map((tab) => (
           <Tab
             key={tab.tabName}

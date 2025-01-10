@@ -40,7 +40,7 @@ export default function NavBar() {
 
   return (
     <div
-      className={`bottom-0 left-0 right-0 fixed grid grid-cols-5 grid-rows-1 gap-2 p-2 rounded-t-xl bg-surface-container-l2`}>
+      className={`bottom-0 left-0 right-0 fixed grid grid-cols-5 grid-rows-1 gap-2 p-2 rounded-t-xl bg-surface-container-l2 bg-opacity-90`}>
       {navItems.map((item) => (
         <Link
           href={`/game${item.href}`}

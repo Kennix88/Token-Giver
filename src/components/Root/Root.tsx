@@ -76,7 +76,7 @@ export function Root(props: PropsWithChildren) {
       <RootInner {...props} />
     </ErrorBoundary>
   ) : (
-    <div className="root__loading bg-background text-on-surface w-screen min-h-screen...">
+    <div className="root__loading bg-background text-on-surface w-screen bg-opacity-90 min-h-screen... ">
       Loading...
     </div>
   )

@@ -48,7 +48,7 @@ export default function TasksList({
             groupedTasks['null'].length > 0 && (
               <div
                 key="null"
-                className="flex flex-col bg-surface-container-l2 rounded-md">
+                className="flex flex-col bg-surface-container-l2 rounded-md bg-opacity-70">
                 <div className={'divide-y divide-on-surface divide-opacity-10'}>
                   {'null' in groupedTasks &&
                     groupedTasks['null'].map((task) => (
@@ -74,7 +74,7 @@ export default function TasksList({
             groupedTasks[partnerId].length > 0 && (
               <div
                 key={partnerId}
-                className={`relative flex flex-col bg-surface-container-l2 rounded-md`}>
+                className={`relative flex flex-col bg-surface-container-l2 rounded-md bg-opacity-70`}>
                 {partner?.bgUrl && (
                   <>
                     <Image

@@ -82,7 +82,7 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
           {t('your')}
         </div>
         <div
-          className={`flex p-4 flex-row gap-2 col-span-2 justify-between rounded-md items-center ${date.user.place === 1 ? 'bg-gold bg-opacity-20' : date.user.place === 2 ? 'bg-silver bg-opacity-20 ' : date.user.place === 3 ? 'bg-bronze bg-opacity-20 ' : 'bg-surface-container-l2'}`}>
+          className={`flex p-4 flex-row gap-2 col-span-2 justify-between rounded-md items-center ${date.user.place === 1 ? 'bg-gold bg-opacity-20' : date.user.place === 2 ? 'bg-silver bg-opacity-20 ' : date.user.place === 3 ? 'bg-bronze bg-opacity-20 ' : 'bg-surface-container-l2 bg-opacity-70'}`}>
           <div className="flex flex-row gap-2 items-center ">
             <div className="relative flex justify-center items-center p-1 rounded-md bg-surface-container w-[40px] h-[40px]">
               {date.user.photoUrl ? (
@@ -138,7 +138,7 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
         <div className="px-4 opacity-50 flex flex-row gap-2 items-center">
           {t('top')}
         </div>
-        <div className="flex flex-col bg-surface-container-l2 rounded-md">
+        <div className="flex flex-col bg-surface-container-l2 bg-opacity-70 rounded-md">
           {date.list.map((item, index) => (
             <div
               key={item.id}

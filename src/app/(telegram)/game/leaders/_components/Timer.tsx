@@ -29,7 +29,7 @@ export default function Timer({ date }: { date: Date }) {
   }
 
   return (
-    <div className="bg-surface-container-h py-1 px-2 rounded-md text-sm">
+    <div className="bg-surface-container-h py-1 px-2 rounded-md text-sm bg-opacity-70">
       {formatTime(seconds)}
     </div>
   )

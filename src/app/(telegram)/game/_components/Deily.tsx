@@ -25,7 +25,7 @@ export default function Deily() {
   ]
 
   return (
-    <div className="flex flex-row gap-2 items-center justify-between p-2 border-surface-container-h border rounded-md">
+    <div className="flex flex-row gap-2 items-center justify-between p-2 border-surface-container-h border rounded-md bg-opacity-70">
       <div className="flex flex-row gap-2 items-center text-sm text-nowrap">
         <MdOutlineCalendarMonth /> {t('dailyCheckIn')}
       </div>

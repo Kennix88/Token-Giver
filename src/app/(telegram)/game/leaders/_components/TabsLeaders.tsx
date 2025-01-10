@@ -24,11 +24,11 @@ export default function TabsLeaders() {
 
   return (
     <TabGroup className="flex flex-col gap-4">
-      <TabList className="w-full flex flex-row flex-wrap items-center border-b border-surface-container-h">
+      <TabList className="flex-wrap flex flex-row items-center justify-center text-nowrap bg-surface-container-l2 rounded-md bg-opacity-70">
         {tabs.map((tab) => (
           <Tab
             key={tab.tabName}
-            className="px-4 font-medium grow py-2 data-[selected]:border-primary flex flex-row items-center justify-center data-[selected]:border-b-3 data-[selected]:text-primary ">
+            className="px-4 grow py-2 font-medium data-[selected]:bg-primary data-[selected]:text-on-primary rounded-md flex flex-row items-center justify-center gap-1">
             {tab.tabName}
           </Tab>
         ))}

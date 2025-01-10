@@ -61,8 +61,8 @@ export default function Profile() {
 
   return (
     <div className="flex flex-col gap-1 font-extralight">
-      <div className="px-4 opacity-50">{t('profile.title')}</div>
-      <div className="bg-surface-container-l2 p-4 rounded-md flex flex-col gap-4 text-sm">
+      {/*<div className="px-4 opacity-50">{t('profile.title')}</div>*/}
+      <div className="bg-surface-container-l2 p-4 rounded-md flex flex-col gap-4 text-sm bg-opacity-70">
         <div className="flex flex-row gap-2 items-center justify-between">
           <div className="flex flex-row gap-2 items-center ">
             <div className="flex justify-center items-center p-1 rounded-md bg-surface-container w-[40px] h-[40px]">
