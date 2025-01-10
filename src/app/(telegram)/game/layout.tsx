@@ -20,7 +20,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
 
   return (
     <html lang={locale} className={'dark scrollbar-hide'}>
-      <body className="">
+      <body className="bg-background">
         <NextUIProvider>
           <I18nProvider>
             <Root>
