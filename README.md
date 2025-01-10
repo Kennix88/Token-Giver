@@ -43,11 +43,12 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
     - [x] **TasksBanner** - Component
   - [ ] **Tasks** - Page
     - [x] **Tabs** - Component
-    - [ ] **Limited Tasks** - Component
-    - [ ] **Deily Tasks** - Component
-    - [ ] **In-Game Tasks** - Component
-    - [ ] **Partner Tasks** - Component
-    - [ ] **Quests** - Component
+    - [x] **Limited Tasks** - Component
+    - [x] **Deily Tasks** - Component
+    - [x] **In-Game Tasks** - Component
+    - [x] **Partner Tasks** - Component
+    - [x] **Quests** - Component
+    - [x] **Hi-Risk** - Component
   - [ ] **Leaders** - Page
     - [x] **Statistics** - Component
     - [x] **King The Hill** - Component

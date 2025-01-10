@@ -1,5 +1,6 @@
 'use client'
 
+import HiRiskDisclaimer from '@/app/(telegram)/game/tasks/_components/HiRiskDisclaimer.tsx'
 import TasksList from '@/app/(telegram)/game/tasks/_components/TasksList.tsx'
 import { IconsEnum } from '@/types/icons.enum.ts'
 import { PartnersInteface } from '@/types/partners.inteface.ts'
@@ -143,33 +144,44 @@ export default function TabsTasks() {
     (item) => item.category === TaskCategoryEnum.hiRisk,
   )
 
-  const tabs = [
+  const tabs: {
+    key: string
+    tabName: string
+    count: number
+    list: TaskInterface[]
+  }[] = [
     {
+      key: 'limited',
       tabName: t('limited'),
       count: limitedList.length,
       list: limitedList,
     },
     {
+      key: 'daily',
       tabName: t('daily'),
       count: dailyList.length,
       list: dailyList,
     },
     {
+      key: 'inGame',
       tabName: t('inGame'),
       count: inGameList.length,
       list: inGameList,
     },
     {
+      key: 'partners',
       tabName: t('partners'),
       count: partnerList.length,
       list: partnerList,
     },
     {
+      key: 'quests',
       tabName: t('quests'),
       count: questsList.length,
       list: questsList,
     },
     {
+      key: 'hiRisk',
       tabName: t('hiRisk'),
       count: hiRiskList.length,
       list: hiRiskList,
@@ -194,7 +206,8 @@ export default function TabsTasks() {
       </TabList>
       <TabPanels>
         {tabs.map((tab) => (
-          <TabPanel key={tab.tabName + 1}>
+          <TabPanel key={tab.key} className={'flex flex-col gap-2'}>
+            {tab.key == 'hiRisk' && <HiRiskDisclaimer />}
             <TasksList tasks={tab.list} partners={data.partners} />
           </TabPanel>
         ))}
