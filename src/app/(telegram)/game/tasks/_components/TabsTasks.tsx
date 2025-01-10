@@ -170,7 +170,7 @@ export default function TabsTasks() {
       list: questsList,
     },
     {
-      tabName: 'Hi-Risk',
+      tabName: t('hiRisk'),
       count: hiRiskList.length,
       list: hiRiskList,
     },

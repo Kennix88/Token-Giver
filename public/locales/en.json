@@ -45,12 +45,17 @@
       }
     },
     "tasks": {
+      "title": "Tasks",
+      "get": "Get Rewards",
+      "for": "for completing tasks",
+      "noTasksYet": "No tasks yet",
       "tabs": {
         "limited": "Limited",
         "daily": "Daily",
         "inGame": "In-Game",
         "partners": "Partners",
-        "quests": "quests"
+        "quests": "Quests",
+        "hiRisk": "Hi-Risk"
       }
     }
   }

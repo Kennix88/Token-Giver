@@ -3,6 +3,7 @@ import Task from '@/app/(telegram)/game/tasks/_components/Task.tsx'
 import { PartnersInteface } from '@/types/partners.inteface.ts'
 import { TaskInterface } from '@/types/task.interface.ts'
 import Image from 'next/image'
+import { useTranslations } from 'use-intl'
 
 export default function TasksList({
   tasks,
@@ -11,10 +12,11 @@ export default function TasksList({
   tasks: TaskInterface[]
   partners: PartnersInteface[]
 }) {
+  const t = useTranslations('game.tasks')
   if (tasks.length === 0) {
     return (
       <div className="flex flex-row items-center justify-center">
-        No tasks yet
+        {t('noTasksYet')}
       </div>
     )
   }
