@@ -1,0 +1,58 @@
+{
+    "game": {
+      "soon": "Próximamente...",
+      "boostButton": "Mejora tu puntuación",
+      "menu": {
+        "home": "Inicio",
+        "tasks": "Tareas",
+        "leaders": "Líderes",
+        "friends": "Amigos",
+        "games": "Juegos"
+      },
+      "home": {
+        "profile": {
+          "title": "Perfil",
+          "wallet": "Billetera",
+          "notConnected": "No conectado",
+          "connectButton": "Conectar una billetera"
+        },
+        "dailyCheckIn": "Registro diario",
+        "tasksBanner": {
+          "title": "Tu recompensa",
+          "button": "Recibir"
+        }
+      },
+      "games": {
+        "title": "Mini-Juegos"
+      },
+      "leaders": {
+        "statistics": {
+          "title": "Estadísticas",
+          "users": "Usuarios"
+        },
+        "kingTheHill": {
+          "title": "Rey de la colina",
+          "button": "Conviértete en Rey"
+        },
+        "list": {
+          "your": "Tu posición",
+          "top": "Top 100"
+        },
+        "tabs": {
+          "token": "Tokens",
+          "deamond": "Diamantes",
+          "referral": "Referidos"
+        }
+      },
+      "tasks": {
+        "tabs": {
+          "limited": "Limitadas",
+          "daily": "Diarias",
+          "inGame": "En el juego",
+          "partners": "Socios",
+          "quests": "Misiones"
+        }
+      }
+    }
+  }
+  

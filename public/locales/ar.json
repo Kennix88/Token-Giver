@@ -1,0 +1,58 @@
+{
+    "game": {
+      "soon": "قريباً...",
+      "boostButton": "عزّز نتيجتك",
+      "menu": {
+        "home": "الرئيسية",
+        "tasks": "المهام",
+        "leaders": "القادة",
+        "friends": "الأصدقاء",
+        "games": "الألعاب"
+      },
+      "home": {
+        "profile": {
+          "title": "الملف الشخصي",
+          "wallet": "المحفظة",
+          "notConnected": "غير متصل",
+          "connectButton": "ربط المحفظة"
+        },
+        "dailyCheckIn": "تسجيل الدخول اليومي",
+        "tasksBanner": {
+          "title": "مكافأتك",
+          "button": "استلم"
+        }
+      },
+      "games": {
+        "title": "الألعاب المصغرة"
+      },
+      "leaders": {
+        "statistics": {
+          "title": "الإحصائيات",
+          "users": "المستخدمون"
+        },
+        "kingTheHill": {
+          "title": "ملك التل",
+          "button": "كن الملك"
+        },
+        "list": {
+          "your": "موقعك",
+          "top": "أفضل 100"
+        },
+        "tabs": {
+          "token": "التوكنات",
+          "deamond": "الألماس",
+          "referral": "الإحالات"
+        }
+      },
+      "tasks": {
+        "tabs": {
+          "limited": "المهام المحدودة",
+          "daily": "اليومية",
+          "inGame": "داخل اللعبة",
+          "partners": "الشركاء",
+          "quests": "المهمات"
+        }
+      }
+    }
+  }
+  

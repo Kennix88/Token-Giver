@@ -1,0 +1,58 @@
+{
+    "game": {
+      "soon": "जल्द ही...",
+      "boostButton": "अपना स्कोर बढ़ाएँ",
+      "menu": {
+        "home": "होम",
+        "tasks": "कार्य",
+        "leaders": "नेता",
+        "friends": "मित्र",
+        "games": "खेल"
+      },
+      "home": {
+        "profile": {
+          "title": "प्रोफ़ाइल",
+          "wallet": "वॉलेट",
+          "notConnected": "कनेक्ट नहीं है",
+          "connectButton": "वॉलेट कनेक्ट करें"
+        },
+        "dailyCheckIn": "दैनिक लॉगिन",
+        "tasksBanner": {
+          "title": "आपका इनाम",
+          "button": "प्राप्त करें"
+        }
+      },
+      "games": {
+        "title": "मिनी-खेल"
+      },
+      "leaders": {
+        "statistics": {
+          "title": "आंकड़े",
+          "users": "उपयोगकर्ता"
+        },
+        "kingTheHill": {
+          "title": "पहाड़ी का राजा",
+          "button": "राजा बनें"
+        },
+        "list": {
+          "your": "आपकी स्थिति",
+          "top": "टॉप 100"
+        },
+        "tabs": {
+          "token": "टोकन",
+          "deamond": "हीरे",
+          "referral": "रेफरल"
+        }
+      },
+      "tasks": {
+        "tabs": {
+          "limited": "सीमित",
+          "daily": "दैनिक",
+          "inGame": "खेल में",
+          "partners": "साझेदार",
+          "quests": "मिशन"
+        }
+      }
+    }
+  }
+  

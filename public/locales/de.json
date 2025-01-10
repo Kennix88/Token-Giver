@@ -1,0 +1,58 @@
+{
+    "game": {
+      "soon": "Bald...",
+      "boostButton": "Erhöhe deinen Punktestand",
+      "menu": {
+        "home": "Startseite",
+        "tasks": "Aufgaben",
+        "leaders": "Führende",
+        "friends": "Freunde",
+        "games": "Spiele"
+      },
+      "home": {
+        "profile": {
+          "title": "Profil",
+          "wallet": "Brieftasche",
+          "notConnected": "Nicht verbunden",
+          "connectButton": "Brieftasche verbinden"
+        },
+        "dailyCheckIn": "Täglicher Check-In",
+        "tasksBanner": {
+          "title": "Deine Belohnung",
+          "button": "Erhalten"
+        }
+      },
+      "games": {
+        "title": "Mini-Spiele"
+      },
+      "leaders": {
+        "statistics": {
+          "title": "Statistiken",
+          "users": "Benutzer"
+        },
+        "kingTheHill": {
+          "title": "König des Hügels",
+          "button": "Werde König"
+        },
+        "list": {
+          "your": "Deine Position",
+          "top": "Top 100"
+        },
+        "tabs": {
+          "token": "Token",
+          "deamond": "Diamanten",
+          "referral": "Empfehlungen"
+        }
+      },
+      "tasks": {
+        "tabs": {
+          "limited": "Begrenzt",
+          "daily": "Täglich",
+          "inGame": "Im Spiel",
+          "partners": "Partner",
+          "quests": "Quests"
+        }
+      }
+    }
+  }
+  

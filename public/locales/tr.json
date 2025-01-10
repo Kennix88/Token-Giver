@@ -1,0 +1,58 @@
+{
+    "game": {
+      "soon": "Yakında...",
+      "boostButton": "Puanını artır",
+      "menu": {
+        "home": "Ana Sayfa",
+        "tasks": "Görevler",
+        "leaders": "Liderler",
+        "friends": "Arkadaşlar",
+        "games": "Oyunlar"
+      },
+      "home": {
+        "profile": {
+          "title": "Profil",
+          "wallet": "Cüzdan",
+          "notConnected": "Bağlanmadı",
+          "connectButton": "Cüzdan bağla"
+        },
+        "dailyCheckIn": "Günlük Giriş",
+        "tasksBanner": {
+          "title": "Ödülün",
+          "button": "Al"
+        }
+      },
+      "games": {
+        "title": "Mini-Oyunlar"
+      },
+      "leaders": {
+        "statistics": {
+          "title": "İstatistikler",
+          "users": "Kullanıcılar"
+        },
+        "kingTheHill": {
+          "title": "Tepenin Kralı",
+          "button": "Kral Ol"
+        },
+        "list": {
+          "your": "Senin sıran",
+          "top": "İlk 100"
+        },
+        "tabs": {
+          "token": "Jetonlar",
+          "deamond": "Elmaslar",
+          "referral": "Yönlendirme"
+        }
+      },
+      "tasks": {
+        "tabs": {
+          "limited": "Sınırlı",
+          "daily": "Günlük",
+          "inGame": "Oyunda",
+          "partners": "Partnerler",
+          "quests": "Görevler"
+        }
+      }
+    }
+  }
+  

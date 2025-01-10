@@ -1,0 +1,58 @@
+{
+    "game": {
+      "soon": "Segera...",
+      "boostButton": "Tingkatkan skor Anda",
+      "menu": {
+        "home": "Beranda",
+        "tasks": "Tugas",
+        "leaders": "Pemimpin",
+        "friends": "Teman",
+        "games": "Permainan"
+      },
+      "home": {
+        "profile": {
+          "title": "Profil",
+          "wallet": "Dompet",
+          "notConnected": "Tidak terhubung",
+          "connectButton": "Hubungkan dompet"
+        },
+        "dailyCheckIn": "Check-In Harian",
+        "tasksBanner": {
+          "title": "Hadiah Anda",
+          "button": "Terima"
+        }
+      },
+      "games": {
+        "title": "Permainan Mini"
+      },
+      "leaders": {
+        "statistics": {
+          "title": "Statistik",
+          "users": "Pengguna"
+        },
+        "kingTheHill": {
+          "title": "Raja Bukit",
+          "button": "Jadi Raja"
+        },
+        "list": {
+          "your": "Posisi Anda",
+          "top": "Top 100"
+        },
+        "tabs": {
+          "token": "Token",
+          "deamond": "Berlian",
+          "referral": "Rujukan"
+        }
+      },
+      "tasks": {
+        "tabs": {
+          "limited": "Terbatas",
+          "daily": "Harian",
+          "inGame": "Dalam permainan",
+          "partners": "Mitra",
+          "quests": "Misi"
+        }
+      }
+    }
+  }
+  
