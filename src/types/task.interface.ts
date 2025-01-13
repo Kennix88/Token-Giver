@@ -50,7 +50,7 @@ export enum TaskCategoryEnum {
   inGame = 'inGame',
   daily = 'daily',
   partners = 'partners',
-  quests = 'quests',
+  achievements = 'achievements',
   hiRisk = 'hiRisk',
 }
 

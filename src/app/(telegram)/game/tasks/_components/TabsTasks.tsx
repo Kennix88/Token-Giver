@@ -138,7 +138,7 @@ export default function TabsTasks() {
     (item) => item.category === TaskCategoryEnum.partners,
   )
   const questsList = data.tasks.filter(
-    (item) => item.category === TaskCategoryEnum.quests,
+    (item) => item.category === TaskCategoryEnum.achievements,
   )
   const hiRiskList = data.tasks.filter(
     (item) => item.category === TaskCategoryEnum.hiRisk,
@@ -175,8 +175,8 @@ export default function TabsTasks() {
       list: partnerList,
     },
     {
-      key: 'quests',
-      tabName: t('quests'),
+      key: 'achievements',
+      tabName: t('achievements'),
       count: questsList.length,
       list: questsList,
     },

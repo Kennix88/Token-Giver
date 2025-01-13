@@ -16,7 +16,9 @@ export default function Task({
     <div
       className={`flex p-4 flex-row gap-2 col-span-2 justify-between items-center`}>
       <div className="flex flex-row gap-2 items-center ">
-        <TaskIcon task={task} partner={partner} />
+        <div className="w-[40px] h-[40px]">
+          <TaskIcon task={task} partner={partner} />
+        </div>
         <div className="flex flex-col gap-1">
           <div className="font-bold flex flex-row gap-1 text-[14px] items-center">
             <div>{task.title}</div>
@@ -27,8 +29,8 @@ export default function Task({
           </div>
         </div>
       </div>
-      <button className="font-medium text-[14px] flex items-center justify-center">
-        click
+      <button className="font-medium text-[14px] flex items-center justify-center bg-primary text-on-primary px-4 py-2 rounded-md">
+        Go
       </button>
     </div>
   )
