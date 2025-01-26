@@ -62,6 +62,11 @@
         "achievements": "Achievements",
         "hiRisk": "Hi-Risk"
       }
+    },
+    "friends": {
+      "title": "Friends",
+      "get": "Get Rewards",
+      "for": "for inviting friends"
     }
   }
 }

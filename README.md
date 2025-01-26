@@ -71,6 +71,7 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
 - [ ] **Backend**
 - After the release of the basic version
   - [ ] **Theme switcher**
+  - [ ] **Partner program**
   - [ ] **ADS Gram**
   - [ ] **Add more languages**
   - [ ] **Add games**
