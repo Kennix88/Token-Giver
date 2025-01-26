@@ -70,15 +70,16 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
   - [ ] **Tasks** - Page
 - [ ] **Backend**
 - After the release of the basic version
-- [ ] **BEP20 network**
-- [ ] **Solana network**
-- [ ] **ETH network**
-- [ ] **Theme switcher**
-- [ ] **ADS Gram**
-- [ ] **Add more languages**
-- [ ] **Add games**
-- [ ] **Crypto payments**
-- [ ] **Native assignment placement by users**
+  - [ ] **Theme switcher**
+  - [ ] **ADS Gram**
+  - [ ] **Add more languages**
+  - [ ] **Add games**
+  - [ ] **Crypto payments**
+  - [ ] **Native assignment placement by users**
+- Excluded
+  - 🚫 **BEP20 network**
+  - 🚫 **Solana network**
+  - 🚫 **ETH network**
 
 ## 💵 Sponsorship
 If you want to support me, I will be very happy about it. 🥺👉👈
