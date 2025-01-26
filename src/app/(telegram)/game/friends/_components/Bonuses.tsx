@@ -1,8 +1,9 @@
 'use client'
 
 import FriendsIcon from '@/app/(telegram)/game/friends/_components/FriendsIcon.tsx'
+import Coin from '@/components/coins/Coin.tsx'
+import Gem from '@/components/coins/Gem.tsx'
 import { IconsEnum } from '@/types/icons.enum.ts'
-import addSuffixToNumber from '@/utils/addSuffixToNumber.util.ts'
 import { useTranslations } from 'use-intl'
 
 export default function Bonuses() {
@@ -50,11 +51,11 @@ export default function Bonuses() {
       <div className="px-4 opacity-50 flex flex-row gap-2 items-center">
         {t('title')}
       </div>
-      <div className="bg-surface-container-l2 p-4 rounded-md flex flex-col gap-4 text-sm bg-opacity-70">
+      <div className="bg-surface-container-l2 rounded-md flex flex-col text-sm bg-opacity-70 divide-y divide-on-surface divide-opacity-10">
         {data.bonuses.map((bonus) => (
           <div
             key={bonus.code}
-            className="flex flex-row gap-2 items-center justify-between">
+            className="flex flex-row gap-2 p-4 items-center justify-between ">
             <div className="flex flex-row gap-2 items-center">
               <div className="w-[40px] h-[40px]">
                 <FriendsIcon icon={bonus.icon} />
@@ -63,18 +64,26 @@ export default function Bonuses() {
                 <div className="font-bold flex flex-row gap-1 text-[14px] items-center">
                   {bonus.title}
                 </div>
-                <div className="text-[12px] flex flex-row gap-1 items-center opacity-80 font-medium">
-                  {bonus.tokens > 0 &&
-                    `+${addSuffixToNumber(bonus.tokens, 2)} $TGC`}
-                  {bonus.deamonds > 0 &&
-                    ` +${addSuffixToNumber(bonus.deamonds, 2)} 💎`}
+                <div className="text-[12px] flex flex-row gap-2 items-center font-medium">
+                  {bonus.tokens > 0 && (
+                    <div className="flex flex-row gap-1 items-center">
+                      <div>+{bonus.tokens}</div>
+                      <Coin w={15} />
+                    </div>
+                  )}
+                  {bonus.deamonds > 0 && (
+                    <div className="flex flex-row gap-1 items-center">
+                      <div>+{bonus.deamonds}</div>
+                      <Gem w={15} />
+                    </div>
+                  )}
                   {bonus.percent > 0 && (
-                    <>
-                      <span className="text-success font-bold">
-                        +{bonus.percent}%
-                      </span>{' '}
-                      $TGC
-                    </>
+                    <div className="flex flex-row gap-1 items-center">
+                      <div className="text-success font-bold">
+                        {bonus.percent}%
+                      </div>
+                      <Coin w={15} />
+                    </div>
                   )}
                 </div>
               </div>
