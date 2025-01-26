@@ -1,5 +1,7 @@
 'use client'
 import BoostButton from '@/app/(telegram)/game/_components/BoostButton.tsx'
+import Coin from '@/components/coins/Coin.tsx'
+import Gem from '@/components/coins/Gem.tsx'
 import { localesMap } from '@/core/i18n/config.ts'
 import { setLocale } from '@/core/i18n/locale.ts'
 import { Locale } from '@/core/i18n/types.ts'
@@ -148,13 +150,10 @@ export default function Profile() {
         <hr className="border-0 bg-surface-container h-[1px]" />
         <div className="flex flex-row gap-2 justify-between col-span-2 items-center text-nowrap ">
           <div className="flex-row text-2xl items-center flex gap-1 font-bold ">
-            {addSuffixToNumber(24648310)}{' '}
-            <span className="font-medium text-lg opacity-50 tracking-normal">
-              $TGC
-            </span>
+            {addSuffixToNumber(24648310)} <Coin w={25} />
           </div>
-          <div className="flex-row text-lg items-center flex font-medium ">
-            {addSuffixToNumber(20)} 💎
+          <div className="flex-row gap-1 text-lg items-center flex font-medium ">
+            {addSuffixToNumber(20)} <Gem w={25} />
           </div>
         </div>
       </div>
@@ -170,8 +169,8 @@ export default function Profile() {
               <div className="flex flex-row gap-2 items-center text-nowrap">
                 {t('profile.connectButton')}
               </div>
-              <span className="tracking-normal font-bold text-on-surface text-nowrap">
-                +1000 $TGC
+              <span className="tracking-normal font-bold text-on-surface text-nowrap flex flex-row gap-1 items-center">
+                +1000 <Coin w={20} />
               </span>
             </button>
             <button ref={tonConnectButtonRef} className={'hidden'}>

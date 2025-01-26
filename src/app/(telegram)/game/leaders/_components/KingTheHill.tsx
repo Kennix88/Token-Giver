@@ -2,6 +2,7 @@
 import Multiplier from '@/app/(telegram)/game/leaders/_components/Multiplier.tsx'
 import Timer from '@/app/(telegram)/game/leaders/_components/Timer.tsx'
 import kingSvg from '@/app/_assets/icons/kingTheHill.svg'
+import Coin from '@/components/coins/Coin.tsx'
 import getRandomEmojiAvatar from '@/utils/getRandomEmojiAvatar.ts'
 import limitLengthString from '@/utils/limitLengthString.util.ts'
 import Image from 'next/image'
@@ -73,7 +74,7 @@ export default function KingTheHill() {
             +
             <Multiplier date={date.user.startAt} multiplier={10} />
           </div>
-          <div className="font-bold">$TGC</div>
+          <Coin w={20} />
         </div>
 
         <button className="bg-primary-container text-sm text-on-primary-container font-medium px-4 py-2 rounded-md flex flex-row gap-2 items-center justify-center">

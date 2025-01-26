@@ -1,9 +1,10 @@
 'use client'
 
 import TaskIcon from '@/app/(telegram)/game/tasks/_components/TaskIcon.tsx'
+import Coin from '@/components/coins/Coin.tsx'
+import Gem from '@/components/coins/Gem.tsx'
 import { PartnersInteface } from '@/types/partners.inteface.ts'
 import { TaskInterface } from '@/types/task.interface.ts'
-import addSuffixToNumber from '@/utils/addSuffixToNumber.util.ts'
 
 export default function Task({
   task,
@@ -23,9 +24,19 @@ export default function Task({
           <div className="font-bold flex flex-row gap-1 text-[14px] items-center">
             <div>{task.title}</div>
           </div>
-          <div className="text-[12px] flex flex-row gap-1 items-center opacity-80 font-medium">
-            {task.tokens && '+' + addSuffixToNumber(task.tokens, 2) + ' $TGC'}{' '}
-            {task.deamonds && '+' + addSuffixToNumber(task.deamonds, 2) + ' 💎'}
+          <div className="text-[12px] flex flex-row gap-2 items-center text-success font-bold">
+            {task.tokens > 0 && (
+              <div className="flex flex-row gap-1 items-center">
+                <div>+{task.tokens}</div>
+                <Coin w={15} />
+              </div>
+            )}
+            {task.deamonds > 0 && (
+              <div className="flex flex-row gap-1 items-center">
+                <div>+{task.deamonds}</div>
+                <Gem w={15} />
+              </div>
+            )}
           </div>
         </div>
       </div>

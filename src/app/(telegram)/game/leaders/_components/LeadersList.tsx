@@ -1,5 +1,7 @@
 'use client'
 
+import Coin from '@/components/coins/Coin.tsx'
+import Gem from '@/components/coins/Gem.tsx'
 import { LeadersTypeEnum } from '@/types/leadersType.enum.ts'
 import addSuffixToNumber from '@/utils/addSuffixToNumber.util.ts'
 import getRandomEmojiAvatar from '@/utils/getRandomEmojiAvatar.ts'
@@ -110,12 +112,14 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
                 )}
               </div>
               <div className="text-[12px] flex flex-row gap-1 items-center opacity-80 font-medium">
-                {addSuffixToNumber(date.user.score, 2)}{' '}
-                {type == LeadersTypeEnum.TOKEN
-                  ? '$TGC'
-                  : type == LeadersTypeEnum.DEAMOND
-                    ? '💎'
-                    : '$TGC'}
+                {date.user.score.toLocaleString('en-US')}{' '}
+                {type == LeadersTypeEnum.TOKEN ? (
+                  <Coin w={15} />
+                ) : type == LeadersTypeEnum.DEAMOND ? (
+                  <Gem w={15} />
+                ) : (
+                  <Coin w={15} />
+                )}
               </div>
             </div>
           </div>
@@ -170,12 +174,14 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
                     )}
                   </div>
                   <div className="text-[12px] flex flex-row gap-1 items-center opacity-80 font-medium">
-                    {addSuffixToNumber(item.score, 2)}{' '}
-                    {type == LeadersTypeEnum.TOKEN
-                      ? '$TGC'
-                      : type == LeadersTypeEnum.DEAMOND
-                        ? '💎'
-                        : '$TGC'}
+                    {item.score.toLocaleString('en-US')}{' '}
+                    {type == LeadersTypeEnum.TOKEN ? (
+                      <Coin w={15} />
+                    ) : type == LeadersTypeEnum.DEAMOND ? (
+                      <Gem w={15} />
+                    ) : (
+                      <Coin w={15} />
+                    )}
                   </div>
                 </div>
               </div>

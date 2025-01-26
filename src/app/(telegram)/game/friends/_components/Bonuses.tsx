@@ -64,7 +64,7 @@ export default function Bonuses() {
                 <div className="font-bold flex flex-row gap-1 text-[14px] items-center">
                   {bonus.title}
                 </div>
-                <div className="text-[12px] flex flex-row gap-2 items-center font-medium">
+                <div className="text-[12px] flex flex-row gap-2 items-center text-success font-bold">
                   {bonus.tokens > 0 && (
                     <div className="flex flex-row gap-1 items-center">
                       <div>+{bonus.tokens}</div>
@@ -79,9 +79,7 @@ export default function Bonuses() {
                   )}
                   {bonus.percent > 0 && (
                     <div className="flex flex-row gap-1 items-center">
-                      <div className="text-success font-bold">
-                        {bonus.percent}%
-                      </div>
+                      <div className="">{bonus.percent}%</div>
                       <Coin w={15} />
                     </div>
                   )}

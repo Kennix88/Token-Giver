@@ -1,5 +1,7 @@
 'use client'
 
+import Coin from '@/components/coins/Coin.tsx'
+import Gem from '@/components/coins/Gem.tsx'
 import addSuffixToNumber from '@/utils/addSuffixToNumber.util'
 import Link from 'next/link'
 import { useTranslations } from 'use-intl'
@@ -17,12 +19,12 @@ export default function TasksBanner() {
           <div className={'text-[10px] opacity-50'}>
             {t('tasksBanner.title')}
           </div>
-          <div className="flex flex-row gap-2 text-[12px] justify-between text-primary col-span-2 items-center text-nowrap font-bold ">
-            {(6000).toLocaleString('en-US')} $TGC
+          <div className="flex flex-row gap-1 text-[12px] text-primary col-span-2 items-center text-nowrap font-bold ">
+            {(6000).toLocaleString('en-US')} <Coin w={13} />
           </div>
         </div>
-        <div className="flex-row gap-0 text-[12px] items-center flex font-medium ">
-          +{addSuffixToNumber(20)} 💎
+        <div className="flex-row gap-1 text-[12px] items-center flex font-medium ">
+          +{addSuffixToNumber(20)} <Gem w={15} />
         </div>
       </div>
       <Link
