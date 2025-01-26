@@ -2,6 +2,7 @@ export enum IconsEnum {
   emoji = 'emoji',
   ads = 'ads',
   boost = 'boost',
+  game = 'game',
   percent = 'percent',
   friend = 'friend',
   premiumFriend = 'premiumFriend',

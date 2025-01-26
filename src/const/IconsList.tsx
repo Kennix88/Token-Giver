@@ -21,6 +21,7 @@ import {
   FaYoutube,
 } from 'react-icons/fa6'
 import { HiStar } from 'react-icons/hi2'
+import { IoLogoGameControllerA } from 'react-icons/io'
 import { IoLogoVk } from 'react-icons/io5'
 import { LuSprout } from 'react-icons/lu'
 import { MdWebAsset } from 'react-icons/md'
@@ -75,6 +76,12 @@ export const IconsList: IconInterface[] = [
     title: 'Boost',
     icon: <FaBoltLightning className="text-2xl" />,
     color: '#2276f4',
+  },
+  {
+    key: IconsEnum.game,
+    title: 'Game',
+    icon: <IoLogoGameControllerA className="text-2xl" />,
+    color: '#0098EA',
   },
   {
     key: IconsEnum.percent,
