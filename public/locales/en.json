@@ -66,7 +66,14 @@
     "friends": {
       "title": "Friends",
       "get": "Get Rewards",
-      "for": "for inviting friends"
+      "for": "for inviting friends",
+      "bonuses": {
+        "title": "Bonuses",
+        "friend": "Invite a friend",
+        "preminumFriend": "Invite a premium friend",
+        "task": "For each completed task",
+        "game": "For expenses in the games section"
+      }
     }
   }
 }

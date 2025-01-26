@@ -99,7 +99,7 @@ export const IconsList: IconInterface[] = [
     key: IconsEnum.premiumFriend,
     title: 'premiumFriend',
     icon: <FaUser className="text-2xl" />,
-    color: '#FFD700',
+    color: '#5865F2',
   },
   {
     key: IconsEnum.friends,
