@@ -113,7 +113,7 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
                 )}
               </div>
               <div className="text-[12px] flex flex-row gap-1 items-center opacity-80 font-medium">
-                {data.user.score.toLocaleString('en-US')}{' '}
+                {data.user.score.toLocaleString('ru-RU')}{' '}
                 {type == LeadersTypeEnum.TOKEN ? (
                   <Coin w={15} />
                 ) : type == LeadersTypeEnum.DEAMOND ? (
@@ -175,7 +175,7 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
                     )}
                   </div>
                   <div className="text-[12px] flex flex-row gap-1 items-center opacity-80 font-medium">
-                    {item.score.toLocaleString('en-US')}{' '}
+                    {item.score.toLocaleString('ru-RU')}{' '}
                     {type == LeadersTypeEnum.TOKEN ? (
                       <Coin w={15} />
                     ) : type == LeadersTypeEnum.DEAMOND ? (

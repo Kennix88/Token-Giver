@@ -33,30 +33,7 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
 4. Open the application at "Direct Link" in telegram
 
 ## Tasks
-- Before the release of the basic version
-- [ ] **Telegram mini app (TMA)**
-  - [x] **Header** - Component
-  - [x] **Navigation** - Component
-  - [x] **GamesList** - Component
-  - [ ] **Rewards** - Component
-  - [ ] **Boost score** - Page
-  - [x] **Boost score button** - Component
-  - [ ] **Plus status** - Page
-  - [ ] **Plus status button** - Component
-  - [ ] **Welcome** - Page
-  - [x] **Home** - Page
-  - [x] **Tasks** - Page
-  - [x] **Leaders** - Page
-  - [ ] **Friends** - Page
-  - [x] **Games** - Page
-- [ ] **Admin panel**
-  - [ ] **Dashboard** - Page
-  - [ ] **Users** - Page
-  - [ ] **Settings** - Page
-  - [ ] **Analytics** - Page
-  - [ ] **Tasks** - Page
-- [ ] **Backend**
-- After the release of the basic version
+- **Frontend**
   - [ ] **Theme switcher**
   - [ ] **Partner program**
   - [ ] **ADS Gram**
@@ -64,7 +41,30 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
   - [ ] **Add games**
   - [ ] **Crypto payments**
   - [ ] **Native assignment placement by users**
-- Excluded
+  - [ ] **Telegram mini app (TMA)**
+    - [x] **Header** - Component
+    - [x] **Navigation** - Component
+    - [x] **GamesList** - Component
+    - [ ] **Rewards** - Component
+    - [ ] **Boost score** - Page
+    - [x] **Boost score button** - Component
+    - [ ] **Plus status** - Page
+    - [ ] **Plus status button** - Component
+    - [ ] **Welcome** - Page
+    - [x] **Home** - Page
+    - [x] **Tasks** - Page
+    - [x] **Leaders** - Page
+    - [ ] **Friends** - Page
+    - [x] **Games** - Page
+  - [ ] **Admin panel**
+    - [ ] **Dashboard** - Page
+    - [ ] **Users** - Page
+    - [ ] **Settings** - Page
+    - [ ] **Analytics** - Page
+    - [ ] **Tasks** - Page
+- **Backend**
+  
+- **Excluded**
   - 🚫 **BEP20 network**
   - 🚫 **Solana network**
   - 🚫 **ETH network**

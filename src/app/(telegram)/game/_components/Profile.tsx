@@ -153,7 +153,7 @@ export default function Profile() {
             {addSuffixToNumber(24648310)} <Coin w={25} />
           </div>
           <div className="flex-row gap-1 text-lg items-center flex font-medium ">
-            {addSuffixToNumber(20)} <Gem w={25} />
+            {(20).toLocaleString('ru-RU')} <Gem w={25} />
           </div>
         </div>
       </div>
@@ -170,7 +170,7 @@ export default function Profile() {
                 {t('profile.connectButton')}
               </div>
               <span className="tracking-normal font-bold text-on-surface text-nowrap flex flex-row gap-1 items-center">
-                +1000 <Coin w={20} />
+                +{(1000).toLocaleString('ru-RU')} <Coin w={20} />
               </span>
             </button>
             <button ref={tonConnectButtonRef} className={'hidden'}>

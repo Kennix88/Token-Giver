@@ -67,6 +67,9 @@
       "title": "Friends",
       "get": "Get Rewards",
       "for": "for inviting friends",
+      "statTitle": "Statistics",
+      "listTitle": "Your friends",
+      "listEmpty": "No friends yet",
       "bonuses": {
         "title": "Bonuses",
         "friend": "Invite a friend",

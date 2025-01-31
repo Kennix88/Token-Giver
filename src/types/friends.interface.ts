@@ -1,7 +1,7 @@
 export interface FriendsDataInterface {
   allTokens: number
   allFriends: number
-  friendsList: FriendsInterface[]
+  list: FriendsInterface[]
 }
 
 export interface FriendsInterface {

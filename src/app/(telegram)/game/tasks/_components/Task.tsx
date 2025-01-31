@@ -27,13 +27,13 @@ export default function Task({
           <div className="text-[12px] flex flex-row gap-2 items-center text-success font-bold">
             {task.tokens > 0 && (
               <div className="flex flex-row gap-1 items-center">
-                <div>+{task.tokens}</div>
+                <div>+{task.tokens.toLocaleString('ru-RU')}</div>
                 <Coin w={15} />
               </div>
             )}
             {task.deamonds > 0 && (
               <div className="flex flex-row gap-1 items-center">
-                <div>+{task.deamonds}</div>
+                <div>+{task.deamonds.toLocaleString('ru-RU')}</div>
                 <Gem w={15} />
               </div>
             )}

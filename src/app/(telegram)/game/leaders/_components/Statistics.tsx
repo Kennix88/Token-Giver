@@ -18,7 +18,7 @@ export default function Statistics() {
         <div className="bg-surface-container-l2 p-4 rounded-md flex flex-row gap-4 bg-opacity-70 items-center justify-between text-sm">
           <div className="opacity-80">{t('users')}</div>
           <div className="text-nowrap font-medium flex flex-row gap-1 items-center">
-            {(16470).toLocaleString('en-US')} <FaUser />
+            {(16470).toLocaleString('ru-RU')} <FaUser />
           </div>
         </div>
       </div>
