@@ -70,6 +70,8 @@
       "statTitle": "Statistics",
       "listTitle": "Your friends",
       "listEmpty": "No friends yet",
+      "copy": "Copy",
+      "invite": "Invite a friend",
       "bonuses": {
         "title": "Bonuses",
         "friend": "Invite a friend",
