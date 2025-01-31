@@ -19,11 +19,19 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
 [![Github followers](https://img.shields.io/github/followers/Kennix88?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917)](https://www.github.com/Kennix88)
 [![Telegram Channel](https://img.shields.io/endpoint?style=for-the-badge&color=0891b2&labelColor=1c1917&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fkennixdev&label=Channel)](https://t.me/KennixDev)
 [![Telegram Group](https://img.shields.io/endpoint?label=Group&style=for-the-badge&color=0891b2&labelColor=1c1917&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2FKennixDevGroup)](https://t.me/KennixDevGroup)
-
+#### In the process of development!
 </div>
 
 ---
-#### In the process of development!
+
+## Testing Telegram mini-app
+1. Install packages ```npm i```
+2. Run ```npm run dev:https```
+3. Create a new web app in [Telegram @BotFather](https://t.me/BotFather). Use the command ```/newapp```.
+   1. Web App URL: ```https://127.0.0.1:3000/``` (The port must be equal to the port of the running project.)
+   2. The rest of the data is any
+4. Open the application at "Direct Link" in telegram
+
 ## Tasks
 - Before the release of the basic version
 - [ ] **Telegram mini app (TMA)**
