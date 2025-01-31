@@ -33,16 +33,18 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
 4. Open the application at "Direct Link" in telegram
 
 ## Tasks
-- **Frontend**
-  - [ ] **Theme switcher**
+- **Common**
   - [ ] **Partner program**
   - [ ] **ADS Gram**
   - [ ] **Add more languages**
   - [ ] **Add games**
   - [ ] **Crypto payments**
   - [ ] **Native assignment placement by users**
+- **Frontend**
+  - [ ] **Theme switcher**
   - [ ] **Telegram mini app (TMA)**
     - [x] **Header** - Component
+    - [ ] **Airdrop** - Page
     - [x] **Navigation** - Component
     - [x] **GamesList** - Component
     - [ ] **Rewards** - Component
