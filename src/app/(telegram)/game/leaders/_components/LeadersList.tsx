@@ -2,6 +2,7 @@
 
 import Coin from '@/components/coins/Coin.tsx'
 import Gem from '@/components/coins/Gem.tsx'
+import { LeadersDataInterface } from '@/types/leaders.interface.ts'
 import { LeadersTypeEnum } from '@/types/leadersType.enum.ts'
 import addSuffixToNumber from '@/utils/addSuffixToNumber.util.ts'
 import getRandomEmojiAvatar from '@/utils/getRandomEmojiAvatar.ts'
@@ -13,7 +14,7 @@ import { useTranslations } from 'use-intl'
 
 export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
   const t = useTranslations('game.leaders.list')
-  const date = {
+  const data: LeadersDataInterface = {
     user: {
       id: 6,
       place: 2800001,
@@ -84,12 +85,12 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
           {t('your')}
         </div>
         <div
-          className={`flex p-4 flex-row gap-2 col-span-2 justify-between rounded-md items-center ${date.user.place === 1 ? 'bg-gold bg-opacity-20' : date.user.place === 2 ? 'bg-silver bg-opacity-20 ' : date.user.place === 3 ? 'bg-bronze bg-opacity-20 ' : 'bg-surface-container-l2 bg-opacity-70'}`}>
+          className={`flex p-4 flex-row gap-2 col-span-2 justify-between rounded-md items-center ${data.user.place === 1 ? 'bg-gold bg-opacity-20' : data.user.place === 2 ? 'bg-silver bg-opacity-20 ' : data.user.place === 3 ? 'bg-bronze bg-opacity-20 ' : 'bg-surface-container-l2 bg-opacity-70'}`}>
           <div className="flex flex-row gap-2 items-center ">
             <div className="relative flex justify-center items-center p-1 rounded-md bg-surface-container w-[40px] h-[40px]">
-              {date.user.photoUrl ? (
+              {data.user.photoUrl ? (
                 <Image
-                  src={date.user.photoUrl}
+                  src={data.user.photoUrl}
                   alt=""
                   width={40}
                   height={40}
@@ -98,21 +99,21 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
               ) : (
                 getRandomEmojiAvatar()
               )}
-              {date.user.place <= 3 && (
+              {data.user.place <= 3 && (
                 <BiSolidCrown
-                  className={`absolute ${date.user.place === 1 ? 'text-gold' : date.user.place === 2 ? 'text-silver' : date.user.place === 3 ? 'text-bronze' : ''} left-[-8px] top-[-14px] rotate-[340deg] text-2xl`}
+                  className={`absolute ${data.user.place === 1 ? 'text-gold' : data.user.place === 2 ? 'text-silver' : data.user.place === 3 ? 'text-bronze' : ''} left-[-8px] top-[-14px] rotate-[340deg] text-2xl`}
                 />
               )}
             </div>
             <div className="flex flex-col gap-1">
               <div className="font-bold flex flex-row gap-1 text-[14px] items-center">
-                <div>{limitLengthString(date.user.name)}</div>
-                {date.user.isVerified && (
+                <div>{limitLengthString(data.user.name)}</div>
+                {data.user.isVerified && (
                   <RiVerifiedBadgeFill className="text-blue-500" />
                 )}
               </div>
               <div className="text-[12px] flex flex-row gap-1 items-center opacity-80 font-medium">
-                {date.user.score.toLocaleString('en-US')}{' '}
+                {data.user.score.toLocaleString('en-US')}{' '}
                 {type == LeadersTypeEnum.TOKEN ? (
                   <Coin w={15} />
                 ) : type == LeadersTypeEnum.DEAMOND ? (
@@ -124,15 +125,15 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
             </div>
           </div>
           <div className="font-medium text-[18px] flex items-center justify-center">
-            {date.user.place === 1 ? (
+            {data.user.place === 1 ? (
               '🥇'
-            ) : date.user.place === 2 ? (
+            ) : data.user.place === 2 ? (
               '🥈'
-            ) : date.user.place === 3 ? (
+            ) : data.user.place === 3 ? (
               '🥉'
             ) : (
               <span className="text-[14px]">
-                #{addSuffixToNumber(date.user.place, 2)}
+                #{addSuffixToNumber(data.user.place, 2)}
               </span>
             )}
           </div>
@@ -143,10 +144,10 @@ export default function LeadersList({ type }: { type: LeadersTypeEnum }) {
           {t('top')}
         </div>
         <div className="flex flex-col bg-surface-container-l2 bg-opacity-70 rounded-md">
-          {date.list.map((item, index) => (
+          {data.list.map((item, index) => (
             <div
               key={item.id}
-              className={`flex p-4 flex-row gap-2 col-span-2 justify-between items-center ${index + 1 === date.list.length ? '' : 'border-b border-on-surface border-opacity-10'} ${item.place === 1 ? 'bg-gold bg-opacity-20 rounded-t-md' : item.place === 2 ? 'bg-silver bg-opacity-20 ' : item.place === 3 ? 'bg-bronze bg-opacity-20 ' : ''}`}>
+              className={`flex p-4 flex-row gap-2 col-span-2 justify-between items-center ${index + 1 === data.list.length ? '' : 'border-b border-on-surface border-opacity-10'} ${item.place === 1 ? 'bg-gold bg-opacity-20 rounded-t-md' : item.place === 2 ? 'bg-silver bg-opacity-20 ' : item.place === 3 ? 'bg-bronze bg-opacity-20 ' : ''}`}>
               <div className="flex flex-row gap-2 items-center ">
                 <div className="relative flex justify-center items-center p-1 rounded-md bg-surface-container w-[40px] h-[40px]">
                   {item.photoUrl ? (
