@@ -20,6 +20,7 @@ import { useDidMount } from '@/hooks/useDidMount'
 import { AppRoot } from '@telegram-apps/telegram-ui'
 import './styles.css'
 
+import { useTelegramMock } from '@/hooks/useTelegramMock.ts'
 import resolveConfig from 'tailwindcss/resolveConfig'
 import config from '../../../tailwind.config.ts'
 const tailwindConfig = resolveConfig(config)
@@ -30,6 +31,12 @@ const backgroundColor = tailwindConfig.theme.colors['surface-container-l2']
 
 function RootInner({ children }: PropsWithChildren) {
   const isDev = process.env.NODE_ENV === 'development'
+
+  // Mock Telegram environment in development mode if needed.
+  if (isDev) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useTelegramMock()
+  }
 
   const lp = useLaunchParams()
   const debug = isDev || lp.startParam === 'debug'
