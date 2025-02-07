@@ -24,6 +24,8 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
 
 ---
 
+#### The backend of this project: [Token Giver Backend](https://github.com/Kennix88/Token-Giver_backend).
+
 ## Testing Telegram mini-app
 1. Install packages ```npm i```
 2. Run ```npm run dev:https```
