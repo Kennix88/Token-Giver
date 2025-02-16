@@ -36,14 +36,11 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
 
 ## Tasks
 - **Common**
-  - [ ] **Partner program**
   - [ ] **ADS Gram**
   - [ ] **Add more languages**
   - [ ] **Add games**
-  - [ ] **Crypto payments**
   - [ ] **Native assignment placement by users**
 - **Frontend**
-  - [ ] **Theme switcher**
   - [ ] **Telegram mini app (TMA)**
     - [x] **Header** - Component
     - [ ] **Airdrop** - Page
@@ -52,8 +49,8 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
     - [ ] **Rewards** - Component
     - [ ] **Boost score** - Page
     - [x] **Boost score button** - Component
-    - [ ] **Plus status** - Page
-    - [ ] **Plus status button** - Component
+    - [ ] **Premium Subscription** - Page
+    - [ ] **Premium Subscription button** - Component
     - [ ] **Welcome** - Page
     - [x] **Home** - Page
     - [x] **Tasks** - Page
