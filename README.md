@@ -1,15 +1,17 @@
 If you have earned money on this project, do not forget to support the author, Thank you!
 
-[![X share](https://img.shields.io/badge/share-blue?style=for-the-badge&color=0891b2&labelColor=1c1917&logo=x&logoColor=FFFFFF&label=X-twitter)](https://x.com/intent/tweet?text=Play-to-earn%20app%20(Telegram-mini-app).%20Telegram%20app%20%2B%20Admin%20panel.%20Customization%20support.%20Analogue%3A%20Paws%2C%20Dogs%2C%20Rats%20Kingdom%2C%20Agent%20301%2C%20Goats%2C%20Cats%26Dogs%20etc.&url=https://github.com/Kennix88/Token-Giver/&hashtags=game,telegram,TapToEarn,PlayToEarn,Dogs,Paws,Goats,Agent301)
-[![Telegram share](https://img.shields.io/badge/share-blue?style=for-the-badge&color=0891b2&labelColor=1c1917&logo=telegram&logoColor=26A5E4&label=Telegram)](https://t.me/share/url?text=Play-to-earn%20app%20(Telegram-mini-app).%20Telegram%20app%20%2B%20Admin%20panel.%20Customization%20support.%20Analogue%3A%20Paws%2C%20Dogs%2C%20Rats%20Kingdom%2C%20Agent%20301%2C%20Goats%2C%20Cats%26Dogs%20etc.&url=https://github.com/Kennix88/Token-Giver/)
-[![Whatsapp share](https://img.shields.io/badge/share-blue?style=for-the-badge&color=0891b2&labelColor=1c1917&logo=whatsapp&logoColor=25D366&label=Whatsapp)](whatsapp://send?text=Play-to-earn%20app%20(Telegram-mini-app).%20Telegram%20app%20%2B%20Admin%20panel.%20Customization%20support.%20Analogue%3A%20Paws%2C%20Dogs%2C%20Rats%20Kingdom%2C%20Agent%20301%2C%20Goats%2C%20Cats%26Dogs%20etc.%20%20https://github.com/Kennix88/Token-Giver/)
-[![Viber share](https://img.shields.io/badge/share-blue?style=for-the-badge&color=0891b2&labelColor=1c1917&logo=whatsapp&logoColor=7360F2&label=Viber)](viber://forward?text=Play-to-earn%20app%20(Telegram-mini-app).%20Telegram%20app%20%2B%20Admin%20panel.%20Customization%20support.%20Analogue%3A%20Paws%2C%20Dogs%2C%20Rats%20Kingdom%2C%20Agent%20301%2C%20Goats%2C%20Cats%26Dogs%20etc.%20%20https://github.com/Kennix88/Token-Giver/)
+[![X share](https://img.shields.io/badge/share-blue?style=for-the-badge&color=0891b2&labelColor=1c1917&logo=x&logoColor=FFFFFF&label=X-twitter)](<https://x.com/intent/tweet?text=Play-to-earn%20app%20(Telegram-mini-app).%20Telegram%20app%20%2B%20Admin%20panel.%20Customization%20support.%20Analogue%3A%20Paws%2C%20Dogs%2C%20Rats%20Kingdom%2C%20Agent%20301%2C%20Goats%2C%20Cats%26Dogs%20etc.&url=https://github.com/Kennix88/Token-Giver/&hashtags=game,telegram,TapToEarn,PlayToEarn,Dogs,Paws,Goats,Agent301>)
+[![Telegram share](https://img.shields.io/badge/share-blue?style=for-the-badge&color=0891b2&labelColor=1c1917&logo=telegram&logoColor=26A5E4&label=Telegram)](<https://t.me/share/url?text=Play-to-earn%20app%20(Telegram-mini-app).%20Telegram%20app%20%2B%20Admin%20panel.%20Customization%20support.%20Analogue%3A%20Paws%2C%20Dogs%2C%20Rats%20Kingdom%2C%20Agent%20301%2C%20Goats%2C%20Cats%26Dogs%20etc.&url=https://github.com/Kennix88/Token-Giver/>)
+[![Whatsapp share](https://img.shields.io/badge/share-blue?style=for-the-badge&color=0891b2&labelColor=1c1917&logo=whatsapp&logoColor=25D366&label=Whatsapp)](<whatsapp://send?text=Play-to-earn%20app%20(Telegram-mini-app).%20Telegram%20app%20%2B%20Admin%20panel.%20Customization%20support.%20Analogue%3A%20Paws%2C%20Dogs%2C%20Rats%20Kingdom%2C%20Agent%20301%2C%20Goats%2C%20Cats%26Dogs%20etc.%20%20https://github.com/Kennix88/Token-Giver/>)
+[![Viber share](https://img.shields.io/badge/share-blue?style=for-the-badge&color=0891b2&labelColor=1c1917&logo=whatsapp&logoColor=7360F2&label=Viber)](<viber://forward?text=Play-to-earn%20app%20(Telegram-mini-app).%20Telegram%20app%20%2B%20Admin%20panel.%20Customization%20support.%20Analogue%3A%20Paws%2C%20Dogs%2C%20Rats%20Kingdom%2C%20Agent%20301%2C%20Goats%2C%20Cats%26Dogs%20etc.%20%20https://github.com/Kennix88/Token-Giver/>)
 
 <div align="center">
 
 # Token-Giver
+
 Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization support. Analogue: Paws, Dogs, Rats Kingdom, Agent 301, Goats, Cats&Dogs etc. Free use. Suitable for commerce.
 
+[![Telegram Open Dev Community](https://img.shields.io/endpoint?label=open%20dev%20community&style=for-the-badge&color=0891b2&labelColor=1c1917&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fodevcmty)](https://t.me/odevcmty)
 ![Title](https://img.shields.io/badge/Repository%3A-blue?style=for-the-badge&color=3C5280)
 [![release](https://img.shields.io/github/package-json/v/Kennix88/Token-Giver?style=for-the-badge&color=0891b2&labelColor=1c1917)](https://github.com/Kennix88/Token-Giver/releases)
 [![License](https://img.shields.io/github/license/Kennix88/Token-Giver?style=for-the-badge&color=0891b2&labelColor=1c1917)](https://github.com/Kennix88/Token-Giver/blob/master/LICENSE)
@@ -19,7 +21,9 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
 [![Github followers](https://img.shields.io/github/followers/Kennix88?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917)](https://www.github.com/Kennix88)
 [![Telegram Channel](https://img.shields.io/endpoint?style=for-the-badge&color=0891b2&labelColor=1c1917&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fkennixdev&label=Channel)](https://t.me/KennixDev)
 [![Telegram Group](https://img.shields.io/endpoint?label=Group&style=for-the-badge&color=0891b2&labelColor=1c1917&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2FKennixDevGroup)](https://t.me/KennixDevGroup)
+
 #### In the process of development!
+
 </div>
 
 ---
@@ -27,14 +31,16 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
 #### The backend of this project: [Token Giver Backend](https://github.com/Kennix88/Token-Giver_backend).
 
 ## Testing Telegram mini-app
-1. Install packages ```npm i```
-2. Run ```npm run dev:https```
-3. Create a new web app in [Telegram @BotFather](https://t.me/BotFather). Use the command ```/newapp```.
-   1. Web App URL: ```https://127.0.0.1:3000/``` (The port must be equal to the port of the running project.)
+
+1. Install packages `npm i`
+2. Run `npm run dev:https`
+3. Create a new web app in [Telegram @BotFather](https://t.me/BotFather). Use the command `/newapp`.
+   1. Web App URL: `https://127.0.0.1:3000/` (The port must be equal to the port of the running project.)
    2. The rest of the data is any
 4. Open the application at "Direct Link" in telegram
 
 ## Tasks
+
 - **Common**
   - [ ] **ADS Gram**
   - [ ] **Add more languages**
@@ -64,13 +70,13 @@ Play-to-earn app (Telegram-mini-app). Telegram app + Admin panel. Customization 
     - [ ] **Analytics** - Page
     - [ ] **Tasks** - Page
 - **Backend**
-  
 - **Excluded**
   - 🚫 **BEP20 network**
   - 🚫 **Solana network**
   - 🚫 **ETH network**
 
 ## 💵 Sponsorship
+
 If you want to support me, I will be very happy about it. 🥺👉👈
 
 - TON or Jettons(NOT, DOGS, X, HMSTR, STON, GEM, JETTON etc) or TON NFT or TG-Names: `UQAjDnbTYmkesnuG0DZv-PeMo3lY-B-K6mfArUBEEdAb4xaJ`
@@ -86,8 +92,11 @@ If you want to support me, I will be very happy about it. 🥺👉👈
 - Telegram Wallet: [@kennix88](https://t.me/Kennix88)
 
 ### ⭐ Stargazers:
+
 [![Stargazers repo roster for @Kennix88/Token-Giver](https://reporoster.com/stars/dark/Kennix88/Token-Giver)](https://github.com/Kennix88/Token-Giver/stargazers)
+
 ### 🍴 Forkers:
+
 [![Forkers repo roster for @Kennix88/Token-Giver](https://reporoster.com/forks/dark/Kennix88/Token-Giver)](https://github.com/Kennix88/Token-Giver/network/members)
 
 ## 🤝 Contributing
@@ -102,6 +111,7 @@ If you want to support me, I will be very happy about it. 🥺👉👈
 Contributions are welcome! To contribute, fork the repository, make your changes, and submit a pull request. We look forward to your innovative [ideas](https://github.com/Kennix88/Token-Giver/pulls) and improvements.
 
 ## License
+
 This repository is available under the [AGPL-3.0](https://opensource.org/license/agpl-v3). Use it freely in both personal and commercial projects.
 
 Created by [Kennix88](https://github.com/Kennix88).
